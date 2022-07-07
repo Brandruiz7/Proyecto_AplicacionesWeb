@@ -4,10 +4,7 @@ Temática de proyecto: Restaurante.
 
 Desarrollado por: 
 
-Sandy Marcela Mejía 
-Camila Luna Castro 
-Laura Segreda Elizondo 
-Brandon José Ruiz Miranda
+Sandy Marcela Mejía, Camila Luna Castro, Laura Segreda Elizondo, Brandon José Ruiz Miranda.
 
 En este caso, se creará una página web utilizando las herramientas, código y lenguajes vistos en el curso. Este repositorio fue creado con la finalidad de administrar los datos como proyecto final de curso.
 
