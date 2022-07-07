@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header th:fragment="header" class="headerTotal">
+            <div class="div_headerPrincipal">
+                <nav class="nav-linksTotal">
+                    <!-- Este div se encarga de organizar los links de arriba -->
+                    <div class="div-NL-general">
+                        <div class="div-nav-links">
+                            <nav class="navbar-links">
+                                <a href="Index.html" th:href="@{/Index}" >Home</a>
+                            </nav>
+                            <nav class="navbar-links">
+                                <a href="Menu.html" th:href="@{/Menu}">Menú</a>
+                            </nav>
+                            <nav class="navbar-links">
+                                <a href="Activities.html" th:href="@{/Activities}">Actividades</a> 
+                            </nav>
+                            <nav class="navbar-links">
+                                <a href="Account.html" th:href="@{/Account}">Cuenta</a>
+                            </nav>
+                            <nav class="navbar-links">
+                                <a href="Orders.html" th:href="@{/Orders}">Solicite su orden</a>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- Este div se encarga de manejar los íconos a la derecha -->
+                    <div class="div-i-general">
+                        <div class="div-icon">
+                            <nav class="navbar-icon">
+                                <a href="Sign_In.html" th:href="@{/Sign_In}"> 
+                                    <img src="img/Log.png" alt="ícono de login"
+                                         height="100%"/>
+                                </a>                              
+                            </nav>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </body>
+</html>
