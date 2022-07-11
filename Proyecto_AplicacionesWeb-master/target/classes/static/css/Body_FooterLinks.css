@@ -47,8 +47,24 @@
 
 .Info_Articulo{
     font-size: 20px;
-    padding-bottom: 160px;;
+    padding-bottom: 160px;
     color: #222122;
     line-height: 1.5;
+
+}
+
+.Info_Contactenos{
+    font-size: 20px;
+    padding-bottom: 10px;;
+    color: #222122;
+    line-height: 1.5;
+
+}
+
+.Redireccionamiento_Correo{
+    padding-bottom: 10px;;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: bold !important;
 
 }

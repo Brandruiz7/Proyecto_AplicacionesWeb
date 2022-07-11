@@ -7,7 +7,11 @@
     <meta name="author" content="Brandon Ruiz">
         <meta name="description" content="Este espacio, contendrá los términos
               y condiciones establecidos para la página web"> 
-        <link th:href="@{css/menu.css}" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="../static/css/Body_FooterLinks.css">
+        <link rel="stylesheet" href="../static/css/menu.css">
+        <link rel="stylesheet" href="../static/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../static/css/bootstrap.css">
+        
     </head>
     <body id="Main" class="root">
         <a name="Arriba"></a>
@@ -19,6 +23,79 @@
         <header th:replace="layout/header :: header"></header>
         
         <div id="page-body" class="body">
+            <div class="Posicion_Articulo">
+                <div class="Contenedor">
+                    <div class="Web-Titulo">Contactenos</div>
+                    <div class="Barra-Info">
+                        <span class="Contenido">
+                            Restaurante &gt; &gt; Contactenos
+                        </span>
+                    </div>
+
+                    <div class="Info_Contactenos">
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing 
+                            elit, sed do eiusmod tempor incididunt ut labore et 
+                            dolore magna aliqua. Ut enim ad minim veniam, quis 
+                            nostrud exercitation ullamco laboris nisi ut aliquip 
+                            ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore 
+                            eu fugiat nulla pariatur. Excepteur sint occaecat 
+                            cupidatat non proident, sunt in culpa qui officia 
+                            deserunt mollit anim id est laborum.
+                        </p>
+                        <p>
+                            Curabitur pretium tincidunt lacus. Nulla gravida 
+                            orci a odio. Nullam varius, turpis et commodo 
+                            pharetra, est eros bibendum elit, nec luctus magna 
+                            felis sollicitudin mauris. Integer in mauris eu nibh
+                            euismod gravida. Duis ac tellus et risus vulputate 
+                            vehicula. Donec lobortis risus a elit. Etiam tempor.
+                            Ut ullamcorper, ligula eu tempor congue, eros est 
+                            euismod turpis, id tincidunt sapien risus a quam. 
+                            Maecenas fermentum consequat mi. Donec fermentum. 
+                            Pellentesque malesuada nulla a mi. Duis sapien sem,
+                            aliquet nec, commodo eget, consequat quis, neque. 
+                            Aliquam faucibus, elit ut dictum aliquet, felis nisl
+                            adipiscing sapien, sed malesuada diam lacus eget 
+                            erat. Cras mollis scelerisque nunc. Nullam arcu. 
+                            Aliquam consequat. Curabitur augue lorem, dapibus 
+                            quis, laoreet et, pretium ac, nisi. Aenean magna 
+                            nisl, mollis quis, molestie eu, feugiat in, orci. 
+                            In hac habitasse platea dictumst.
+                        </p>
+                    </div>
+
+                    <div class="Redireccionamiento_Correo">
+                        <a href="mailto:info@restaurante.com" style="color:#222122; font-size: 30px;font-weight: bold;"><i class="fa fa-envelope" aria-hidden="true"></i> info@restaurante.com</a>
+                    </div>
+                    <br>
+                    <h3 style = "text-align: center; color: gray;">Envianos un mensaje</h3>
+
+                    <form action="" style="margin-left: 15%; margin-right: 15%; padding-bottom: 160px;" class="was-validated">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1" class="LabelForm">Nombre</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1" required style="    border-radius: 50px;">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputPassword1" class="LabelForm">Correo electronico</label>
+                            <input type="email" class="form-control" id="exampleInputPassword1" required style="    border-radius: 50px;">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputPassword1" class="LabelForm">Numero de telefono</label>
+                            <input type="tel" class="form-control" id="exampleInputPassword1" required style="    border-radius: 50px;">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleFormControlTextarea1" class="LabelForm">Mensaje</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="border-radius: 25px;"></textarea>
+                          </div>
+                          <button type="submit" class="btn btn-primary" style="border-radius: 50px;
+                          color: black;
+                          font-weight: 700;
+                          background-color: white;
+                          border-color: black;">Enviar <i class="fa-solid fa-circle-arrow-right"></i></i></button>
+                    </form>
             
         </div>
         
