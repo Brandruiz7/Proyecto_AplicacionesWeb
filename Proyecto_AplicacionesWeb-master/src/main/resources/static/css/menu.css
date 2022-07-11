@@ -229,3 +229,9 @@ a{
     font-weight: 600;
     color: gray;
 }
+
+.fa-envelope-open-o:before{content:"\f2b7"}
+.fa-envelope-open:before{content:"\f2b6"}
+.fa-envelope-square:before{content:"\f199"}
+.fa-envelope:before{content:"\f0e0"}
+.fa-envelope-o:before{content:"\f003"}
