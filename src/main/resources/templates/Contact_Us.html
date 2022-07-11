@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
     <head>
-        <title>TODO supply a title</title>
+        <title>Contáctenos</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Brandon Ruiz">
+        <meta name="author" content="Brandon Ruiz">
+        <meta name="author" content="Marcela Mejia">
         <meta name="description" content="Este espacio, contendrá los términos
               y condiciones establecidos para la página web"> 
         <link th:href="@{css/menu.css}" rel="stylesheet" type="text/css"/>
         <link th:href="@{css/Body_FooterLinks.css}" rel="stylesheet" type="text/css"/>
-
-        
     </head>
     <body id="Main" class="root">
         <a name="Arriba"></a>
@@ -20,14 +19,14 @@
         código. En este caso se hace un div para los enlaces y otro
         para el ícono de cuenta.-->
         <header th:replace="layout/header :: header"></header>
-        
+
         <div id="page-body" class="body">
             <div class="Posicion_Articulo">
                 <div class="Contenedor">
-                    <div class="Web-Titulo">Contactenos</div>
+                    <div class="Web-Titulo">Contáctenos</div>
                     <div class="Barra-Info">
                         <span class="Contenido">
-                            Restaurante &gt; &gt; Contactenos
+                            Restaurante &gt; Contáctenos
                         </span>
                     </div>
 
@@ -76,28 +75,29 @@
                         <div class="form-group">
                             <label for="exampleInputPassword1" class="LabelForm">Nombre</label>
                             <input type="text" class="form-control" id="exampleInputPassword1" required style="    border-radius: 50px;">
-                          </div>
-                          <div class="form-group">
+                        </div>
+                        <div class="form-group">
                             <label for="exampleInputPassword1" class="LabelForm">Correo electronico</label>
                             <input type="email" class="form-control" id="exampleInputPassword1" required style="    border-radius: 50px;">
-                          </div>
-                          <div class="form-group">
+                        </div>
+                        <div class="form-group">
                             <label for="exampleInputPassword1" class="LabelForm">Numero de telefono</label>
                             <input type="tel" class="form-control" id="exampleInputPassword1" required style="    border-radius: 50px;">
-                          </div>
-                          <div class="form-group">
+                        </div>
+                        <div class="form-group">
                             <label for="exampleFormControlTextarea1" class="LabelForm">Mensaje</label>
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="border-radius: 25px;"></textarea>
-                          </div>
-                          <button type="submit" class="btn btn-primary" style="border-radius: 50px;
-                          color: black;
-                          font-weight: 700;
-                          background-color: white;
-                          border-color: black;">Enviar <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="border-radius: 50px;
+                                color: black;
+                                font-weight: 700;
+                                background-color: white;
+                                border-color: black;">Enviar <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
                     </form>
-            
+
+                </div>
+            </div>
         </div>
-        
         <footer th:replace="layout/footer :: footer" ></footer>
     </body>
 </html>
