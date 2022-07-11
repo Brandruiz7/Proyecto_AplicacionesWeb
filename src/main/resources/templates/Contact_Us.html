@@ -7,11 +7,10 @@
     <meta name="author" content="Brandon Ruiz">
         <meta name="description" content="Este espacio, contendrá los términos
               y condiciones establecidos para la página web"> 
-        <link rel="stylesheet" href="../static/css/Body_FooterLinks.css">
-        <link rel="stylesheet" href="../static/css/menu.css">
-        <link rel="stylesheet" href="../static/css/font-awesome.min.css">
-        <link rel="stylesheet" href="../static/css/font-awesome.csss">
-        <link rel="stylesheet" href="../static/css/bootstrap.css">
+        <link th:href="@{css/menu.css}" rel="stylesheet" type="text/css"/>
+        <link th:href="@{css/Body_FooterLinks.css}" rel="stylesheet" type="text/css"/>
+        <link th:href="@{css/font-awesome.css}" rel="stylesheet" type="text/css"/>
+        <link th:href="@{css/bootstrap.css}" rel="stylesheet" type="text/css"/>
         
     </head>
     <body id="Main" class="root">
@@ -69,7 +68,7 @@
                     </div>
 
                     <div class="Redireccionamiento_Correo">
-                        <a href="mailto:info@restaurante.com" style="color:#222122; font-size: 30px;font-weight: bold;"><i class="fa fa-envelope" aria-hidden="true"></i>info@restaurante.com</a>
+                        <a href="mailto:info@restaurante.com" style="color:#222122; font-size: 30px;font-weight: bold;"><i class="fa fa-envelope" aria-hidden="true"></i> info@restaurante.com</a>
                     </div>
                     <br>
                     <h3 style = "text-align: center; color: gray;">Envianos un mensaje</h3>
@@ -95,7 +94,7 @@
                           color: black;
                           font-weight: 700;
                           background-color: white;
-                          border-color: black;">Enviar <i class="fa-solid fa-arrow-right"></i></button>
+                          border-color: black;">Enviar <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
                     </form>
             
         </div>
