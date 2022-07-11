@@ -1,0 +1,70 @@
+/* 
+    Created on : 8 jul. 2022, 00:51:08
+    Author     : Brandon R
+*/
+
+.Contenedor{
+    position: relative;
+    z-index: 2;
+    padding: 120px 0 1.6rem;
+    overflow: hidden;
+}
+
+.Web-Titulo{
+    font-size: 45px;
+    ;
+    font-weight: 800;
+    color: #222122;
+    text-align: center;
+}
+
+.Barra-Info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #101010;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.Barra-Info .Contenido {
+    display: flex;
+    align-items: center;
+}
+
+.Posicion_Articulo {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.Info_Articulo{
+    font-size: 20px;
+    padding-bottom: 160px;
+    color: #222122;
+    line-height: 1.5;
+
+}
+
+.Info_Contactenos{
+    font-size: 20px;
+    padding-bottom: 10px;;
+    color: #222122;
+    line-height: 1.5;
+
+}
+
+.Redireccionamiento_Correo{
+    padding-bottom: 10px;;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: bold !important;
+
+}
