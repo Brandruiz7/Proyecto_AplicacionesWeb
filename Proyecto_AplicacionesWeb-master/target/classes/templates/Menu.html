@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Brandon Ruiz">
+        <meta name="description" content="Este espacio, contendrá los términos
+              y condiciones establecidos para la página web"> 
+        <link th:href="@{css/menu.css}" rel="stylesheet" type="text/css"/>
+    </head>
+    <body id="Main" class="root">
+        <a name="Arriba"></a>
+        <!-- Para montar el header se inicializa con su encapsulador
+        y dentro se hacen las subdiviciones necesarias. Para montarlo
+        es necesario imaginar esa organización de datos y pasarlo a 
+        código. En este caso se hace un div para los enlaces y otro
+        para el ícono de cuenta.-->
+        <header th:replace="layout/header :: header"></header>
+
+        <div id="page-body" class="body">
+
+        </div>
+
+        <footer th:replace="layout/footer :: footer" ></footer>
+    </body>
+</html>
