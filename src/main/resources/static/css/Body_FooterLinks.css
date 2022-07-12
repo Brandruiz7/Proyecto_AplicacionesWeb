@@ -61,6 +61,11 @@
 
 }
 
+.Subtitulo_Articulo{
+    font-size: 40px;
+    font-weight: bold;
+}
+
 .Redireccionamiento_Correo{
     padding-bottom: 10px;;
     line-height: 1.5;
