@@ -22,8 +22,8 @@
                             <nav class="navbar-links">
                                 <a href="Activities.html" th:href="@{/Activities}">Actividades</a> 
                             </nav>
-                            <nav class="navbar-links">
-                                <a href="Account.html" th:href="@{/Account}">Cuenta</a>
+                            <nav class="navbar-links" sec:authorize="hasRole('ROLE_CLIENTE')">
+                                <a href="Configuration_Account.html" th:href="@{/cuenta/Configuration_Account}">Cuenta</a>
                             </nav>
                             <nav class="navbar-links">
                                 <a href="Orders.html" th:href="@{/Orders}">Solicite su orden</a>
@@ -34,8 +34,8 @@
                     <div class="div-i-general">
                         <div class="div-icon">
                             <nav class="navbar-icon">
-                                <a href="Sign_In.html" th:href="@{/Sign_In}"> 
-                                    <img src="img/Log.png" alt="ícono de login"
+                                <a href="Sign_In.html" th:href="@{/cliente/Sign_In}"> 
+                                    <img src="/img/Log.png" alt="ícono de login"
                                          height="100%"/>
                                 </a>                              
                             </nav>

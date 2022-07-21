@@ -7,14 +7,12 @@
  */
 package com.Restaurante.controller;
 
-import com.Restaurante.domain.Cliente;
 import com.Restaurante.service.ClienteService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.stereotype.Controller;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -68,16 +66,7 @@ public class IndexController {
         
         return "About_Us";
     }
-    /**
-     * Este método me permite llamar las URL del sitio.
-     * @return Retorna el cuenta del sitio.
-     */
-    @RequestMapping(path = "/Account", method = RequestMethod.GET)
-    public String loadAccount(){
-        System.out.println("Cargando página...");
-        
-        return "Account";
-    }
+    
     /**
      * Este método me permite llamar las URL del sitio.
      * @return Retorna el actividades del sitio.
@@ -130,26 +119,6 @@ public class IndexController {
     }
     /**
      * Este método me permite llamar las URL del sitio.
-     * @return Retorna el inicio de sesión del sitio.
-     */
-    @RequestMapping(path = "/Sign_In", method = RequestMethod.GET)
-    public String loadSign_In(){
-        System.out.println("Cargando página...");
-        
-        return "Sign_In";
-    }
-    /**
-     * Este método me permite llamar las URL del sitio.
-     * @return Retorna el registro del sitio.
-     */
-    @RequestMapping(path = "/Sign_Up", method = RequestMethod.GET)
-    public String loadSign_Up(){
-        System.out.println("Cargando página...");
-        
-        return "Sign_Up";
-    }
-    /**
-     * Este método me permite llamar las URL del sitio.
      * @return Retorna los términos y condiciones del sitio.
      */
     @RequestMapping(path = "/Terms", method = RequestMethod.GET)
@@ -157,30 +126,5 @@ public class IndexController {
         System.out.println("Cargando página...");
         
         return "Terms";
-    }
-    
-
-    @GetMapping("/nuevoCliente")
-    public String nuevoCliente(Cliente cliente) {
-        return "modificarCliente";
-    }
-
-    @PostMapping("/guardarCliente")
-    public String guardarCliente(Cliente cliente) {
-        clienteService.save(cliente);
-        return "redirect:/";
-    }
-
-    @GetMapping("/modificarCliente/{idCliente}")
-    public String modificarCliente(Cliente cliente, Model model) {
-        cliente = clienteService.getCliente(cliente);
-        model.addAttribute("cliente", cliente);
-        return "modificarCliente";
-    }
-
-    @GetMapping("/eliminarCliente/{idCliente}")
-    public String eliminarCliente(Cliente cliente) {
-        clienteService.delete(cliente);
-        return "redirect:/";
     }
 }

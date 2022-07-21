@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Brandon Ruiz">
+        <meta name="description" content="Este espacio, contendrá los términos
+              y condiciones establecidos para la página web"> 
+        <link th:href="@{/css/menu.css}" rel="stylesheet" type="text/css"/>
+        <link th:href="@{/css/Body_FooterLinks.css}" rel="stylesheet" type="text/css"/>
+    </head>
+    <body id="Main" class="root">
+        <a name="Arriba"></a>
+        <!-- Para montar el header se inicializa con su encapsulador
+        y dentro se hacen las subdiviciones necesarias. Para montarlo
+        es necesario imaginar esa organización de datos y pasarlo a 
+        código. En este caso se hace un div para los enlaces y otro
+        para el ícono de cuenta.-->
+        <header th:replace="layout/header :: header"></header>
+        
+        <!-- Hay que cambiar datos para que coincidan con el cambio de 
+        idioma pero eso falta por configurar. th:text="#{idioma.idioma}" -->
+        <div id="page-body" class="body">
+            <div class="Contenedor">
+            <h2 style="text-align: center;">Login</h2>
+            <form style="text-align: center;" method="POST" th:action="@{/cliente/Sign_In}">
+                <label>Username</label><br>
+                <input type="text" name="username" id="username"><br>
+                <br>            
+                <label>Password</label><br>
+                <input type="password" name="password" id="password"><br>    
+                <br>
+                <button type="submit" value="login">Login</button>
+            </form>
+            </div>
+        </div>
+        <footer th:replace="layout/footer :: footer" ></footer>
+    </body>
+</html>
