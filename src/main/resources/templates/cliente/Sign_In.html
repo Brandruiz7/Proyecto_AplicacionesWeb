@@ -22,19 +22,31 @@
         
         <!-- Hay que cambiar datos para que coincidan con el cambio de 
         idioma pero eso falta por configurar. th:text="#{idioma.idioma}" -->
-        <div id="page-body" class="body">
-            <div class="Contenedor">
-            <h2 style="text-align: center;">Login</h2>
-            <form style="text-align: center;" method="POST" th:action="@{/cliente/Sign_In}">
-                <label>Username</label><br>
-                <input type="text" name="username" id="username"><br>
-                <br>            
-                <label>Password</label><br>
-                <input type="password" name="password" id="password"><br>    
-                <br>
-                <button type="submit" value="login">Login</button>
-            </form>
-            </div>
+        <div id="page-body" class="body">   
+            <div class="Cuadro-General">
+                <aside id="Cuadro1" class="carrusel">
+                        <img src="/img/pexels-kampus-production-6684767.jpg" alt="Prueba"
+                             width="100%"/>
+                </aside>
+                <section>
+                    <article id="Cuadro2" class="login">
+                        <h2 class="Title-login" style="text-align: center;">Iniciar Sesión</h2>
+                        <form method="POST" th:action="@{/cliente/Sign_In}">
+                            <article class="Username">
+                                <label class="Title-Username">Ingrese el correo</label><br>                                
+                            </article>         
+                            <input class="Username-Datos" type="text" name="username" id="username"><br>
+                            <br>
+                            <article class="Password">
+                                <label class="Title-Pass">Contraseña</label><br>  
+                            </article>
+                                <input class="Password-Datos" type="password" name="password" id="password"><br>    
+                                <label class="Password-Loss">¿Ha olvidado su contraseña?</label>
+                            <button type="submit" value="login">Ingresar</button>
+                        </form>
+                    </article>
+                </section>
+            </div>            
         </div>
         <footer th:replace="layout/footer :: footer" ></footer>
     </body>

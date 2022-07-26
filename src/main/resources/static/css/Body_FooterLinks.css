@@ -12,7 +12,6 @@
 
 .Web-Titulo{
     font-size: 45px;
-    ;
     font-weight: 800;
     color: #222122;
     text-align: center;
@@ -55,7 +54,7 @@
 
 .Info_Contactenos{
     font-size: 20px;
-    padding-bottom: 10px;;
+    padding-bottom: 10px;
     color: #222122;
     line-height: 1.5;
 
@@ -67,7 +66,7 @@
 }
 
 .Redireccionamiento_Correo{
-    padding-bottom: 10px;;
+    padding-bottom: 10px;
     line-height: 1.5;
     text-align: center;
     font-weight: bold !important;
