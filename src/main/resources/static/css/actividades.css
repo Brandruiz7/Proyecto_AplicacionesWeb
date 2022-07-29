@@ -1,0 +1,46 @@
+/* Aspecto para la galeria */
+.galeria{
+    display: flex;
+    
+    max-width: 500px; /*Le doy un ancho maximo */
+    height: 300px;
+    width: 100%;
+    overflow-x: scroll; /*Oculta el resto de los elemento y obliga la navegación con el scroll*/
+    scroll-snap-type: x mandatory;
+    /* Propiedades para centrar la galeria */
+    margin: auto;
+    padding-top:30px;
+    padding-bottom: 30px; 
+}
+
+.galeria img{
+    width: 100%;
+    flex: 0 0 100%;
+    object-fit: cover; /* Ajusta la imagen*/
+    scroll-snap-align: center; /* Centra el elemento, esto evita que se pueda navegar libremente con el scroll */
+    
+}
+
+/* Estilos para el scroll de la galeria */
+
+.galeria::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.galeria::-webkit-scrollbar-button:increment,.galeria::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.galeria::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.galeria::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+.galeria::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
