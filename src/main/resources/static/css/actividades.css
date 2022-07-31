@@ -5,7 +5,7 @@
     max-width: 500px; /*Le doy un ancho maximo */
     height: 300px;
     width: 100%;
-    overflow-x: scroll; /*Oculta el resto de los elemento y obliga la navegación con el scroll*/
+    overflow-x: scroll; /*Oculta el resto de los elementos y obliga la navegación con el scroll*/
     scroll-snap-type: x mandatory;
     /* Propiedades para centrar la galeria */
     margin: auto;
