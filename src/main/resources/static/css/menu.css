@@ -472,3 +472,23 @@ h4{
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
+
+.menu{
+    display:flex;
+}
+
+.menu-left{
+    position:relative;
+    top:100px;
+    width:33%;
+}
+
+.menu-right{
+    position:relative;
+    top:100px;
+    width:33%;
+}
+
+.menu-center{
+    width:33%;
+}
