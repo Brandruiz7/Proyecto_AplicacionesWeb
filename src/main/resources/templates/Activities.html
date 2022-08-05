@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Actividades</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Brandon Ruiz">
+        <meta name="description" content="Este espacio, contendrá las actividades a realizar"> 
+        <link th:href="@{css/menu.css}" rel="stylesheet" type="text/css"/>
+        <link th:href="@{css/actividades.css}" rel="stylesheet" type="text/css"/>
+        <link th:href="@{css/Body_FooterLinks.css}" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body id="Main" class="root">
+        <a name="Arriba"></a>
+        <!-- Para montar el header se inicializa con su encapsulador
+        y dentro se hacen las subdiviciones necesarias. Para montarlo
+        es necesario imaginar esa organización de datos y pasarlo a 
+        código. En este caso se hace un div para los enlaces y otro
+        para el ícono de cuenta.-->
+        <header th:replace="layout/header :: header"></header>
+
+        <div id="page-body" class="body">
+            <div class="Posicion_Articulo">
+                <div class="Contenedor">
+                    <div class="Web-Titulo">Actividades de la Semana</div>
+
+                    <section class="galeria">
+                        <img src="https://www.clarin.com/img/2020/12/04/el-restaurante-de-cocina-japonesa___Lgil33i9g_1256x620__1.jpg">
+                        <img src="https://www.clarin.com/img/2020/12/04/el-restaurante-de-cocina-japonesa___Lgil33i9g_1256x620__1.jpg">
+                        <img src="https://www.clarin.com/img/2020/12/04/el-restaurante-de-cocina-japonesa___Lgil33i9g_1256x620__1.jpg">
+                    </section>
+                    <div class="Info_Articulo">
+                        <br/>
+                        <articule>
+                            <figure>
+                                <header class="Subtitulo_Articulo"
+                                        style="text-align: center;">Concierto de Jazz al aire libre</header>
+                                <img src="img/ConciertoJazz.jpg" alt="Jazz" width="50%"/>
+                                <figcaption style="text-align: left;"
+                                            >El grupo internacional se ha presentado en más de 20 países</figcaption>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing 
+                                    elit, sed do eiusmod tempor incididunt ut labore et 
+                                    dolore magna aliqua. Ut enim ad minim veniam, quis 
+                                    nostrud exercitation ullamco laboris nisi ut aliquip 
+                                    ex ea commodo consequat. Duis aute irure dolor in
+                                    reprehenderit in voluptate velit esse cillum dolore 
+                                    eu fugiat nulla pariatur. Excepteur sint occaecat 
+                                    cupidatat non proident, sunt in culpa qui officia 
+                                    deserunt mollit anim id est laborum.
+                                </p>
+                                <p>
+                                    Fusce convallis, mauris imperdiet gravida bibendum, 
+                                    nisl turpis suscipit mauris, sed placerat ipsum urna
+                                    sed risus. In convallis tellus a mauris. Curabitur 
+                                    non elit ut libero tristique sodales. Mauris a lacus.
+                                    Donec mattis semper leo. In hac habitasse platea 
+                                    dictumst. Vivamus facilisis diam at odio. Mauris 
+                                    dictum, nisi eget consequat elementum, lacus ligula
+                                    molestie metus, non feugiat orci magna ac sem. Donec
+                                    turpis. Donec vitae metus. Morbi tristique neque eu 
+                                    mauris. Quisque gravida ipsum non sapien. Proin 
+                                    turpis lacus, scelerisque vitae, elementum at, 
+                                    lobortis ac, quam. Aliquam dictum eleifend risus. In
+                                    hac habitasse platea dictumst. Etiam sit amet diam. 
+                                    Suspendisse odio. Suspendisse nunc. In semper 
+                                    bibendum libero.
+                                </p>
+                                <button type="submit" value="reservar">Reservar</button>
+                            </figure>
+                        </articule>
+                        <br/>
+                        <articule>
+                            <figure>
+                                <header class="Subtitulo_Articulo"
+                                        style="text-align: center;">Noche Mexicana</header>
+                                <img src="img/Noche_Mexicana.jpg" alt="Jazz" width="50%"/>
+                                <figcaption style="text-align: left;"
+                                            >Tendremos Chefs especializados</figcaption>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing 
+                                    elit, sed do eiusmod tempor incididunt ut labore et 
+                                    dolore magna aliqua. Ut enim ad minim veniam, quis 
+                                    nostrud exercitation ullamco laboris nisi ut aliquip 
+                                    ex ea commodo consequat. Duis aute irure dolor in
+                                    reprehenderit in voluptate velit esse cillum dolore 
+                                    eu fugiat nulla pariatur. Excepteur sint occaecat 
+                                    cupidatat non proident, sunt in culpa qui officia 
+                                    deserunt mollit anim id est laborum.
+                                </p>
+                                <p>
+                                    Fusce convallis, mauris imperdiet gravida bibendum, 
+                                    nisl turpis suscipit mauris, sed placerat ipsum urna
+                                    sed risus. In convallis tellus a mauris. Curabitur 
+                                    non elit ut libero tristique sodales. Mauris a lacus.
+                                    Donec mattis semper leo. In hac habitasse platea 
+                                    dictumst. Vivamus facilisis diam at odio. Mauris 
+                                    dictum, nisi eget consequat elementum, lacus ligula
+                                    molestie metus, non feugiat orci magna ac sem. Donec
+                                    turpis. Donec vitae metus. Morbi tristique neque eu 
+                                    mauris. Quisque gravida ipsum non sapien. Proin 
+                                    turpis lacus, scelerisque vitae, elementum at, 
+                                    lobortis ac, quam. Aliquam dictum eleifend risus. In
+                                    hac habitasse platea dictumst. Etiam sit amet diam. 
+                                    Suspendisse odio. Suspendisse nunc. In semper 
+                                    bibendum libero.
+                                </p>
+                                <button type="submit" value="reservar">Reservar</button>
+                            </figure>
+                        </articule>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer th:replace="layout/footer :: footer" ></footer>
+    </body>
+</html>
