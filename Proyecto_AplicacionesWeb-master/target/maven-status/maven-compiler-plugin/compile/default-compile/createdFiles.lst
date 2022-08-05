@@ -1,0 +1,6 @@
+com\Restaurante\controller\IndexController.class
+com\Restaurante\domain\Cliente.class
+com\Restaurante\service\ClienteService.class
+com\Restaurante\RestauranteApplication.class
+com\Restaurante\dao\ClienteDao.class
+com\Restaurante\service\ClienteServiceImpl.class
