@@ -10,6 +10,12 @@
     overflow: hidden;
 }
 
+.Contenedor-Actividades{
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
 .Web-Titulo{
     font-size: 45px;
     font-weight: 800;
@@ -63,6 +69,18 @@
 .Subtitulo_Articulo{
     font-size: 40px;
     font-weight: bold;
+    text-align: center;
+}
+
+.Fig-Articulo{
+    margin: 0px;
+    padding-top: 20px;
+    align-items: center;
+    align-content: center;
+}
+
+.Desc-Articulo{
+    text-align: justify;
 }
 
 .Redireccionamiento_Correo{
@@ -70,5 +88,27 @@
     line-height: 1.5;
     text-align: center;
     font-weight: bold !important;
+}
 
+.Boton-Ubi{
+    position: relative;
+    align-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 499px;
+    padding-right: 499px;
+}
+
+.Boton-Reservar{
+    background-color: #101010;
+    color: white;
+    height: 55px;
+    width: 180px;
+    font-size: 20px;
+    cursor: pointer;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }

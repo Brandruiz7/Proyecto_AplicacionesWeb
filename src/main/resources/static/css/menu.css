@@ -79,7 +79,7 @@
     margin-top: 12px;
     margin-right: 2px;
     margin-left: 100px;
-    max-width: 100%;   
+    max-width: 100%;
 }
 
 .navbar-icon{
@@ -90,11 +90,11 @@
 a{
     font-family: arial;
     outline: none;
-    text-decoration: none;
+    text-decoration: none !important;
     text-align: center;
     font-weight: normal;
     font-size: 18px;
-    color: white;
+    color: white !important;
 }
 
 .body{
@@ -244,7 +244,7 @@ a{
 .Username {
     display: flex;
     margin-top: 40px;
-    margin-left: 90px;
+    margin-left: 70px;
     margin-right:  120px;
     padding-left: 80px;
 
@@ -259,9 +259,9 @@ a{
 
 .Username-Datos{
     height: 30px;
-    width: 250px;
+    width: 350px;
     margin-top: 10px;
-    margin-left: 170px;
+    margin-left: 150px;
     margin-right:  120px;
     padding-left: 120px;
     border-bottom-left-radius: 9px;
@@ -273,7 +273,7 @@ a{
 .Password {
     display: flex;
     margin-top: 40px;
-    margin-left: 90px;
+    margin-left: 70px;
     margin-right:  120px;
     padding-left: 80px;
 
@@ -288,9 +288,9 @@ a{
 
 .Password-Datos{
     height: 30px;
-    width: 250px;
+    width: 350px;
     margin-top: 10px;
-    margin-left: 170px;
+    margin-left: 150px;
     margin-right:  120px;
     padding-left: 120px;
     border-bottom-left-radius: 9px;
@@ -301,35 +301,38 @@ a{
 
 .Password-Loss{
     display: flex;
-    margin-left: 90px;
+    padding-top: 20px;
+    margin-left: 70px;
     margin-right:  120px;
     padding-left: 80px;
+    cursor: pointer;
 }
 
-#Cuadro1{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 400px;
-    width: 700px;
-    background-color: #F6F5F5;
-    color: black;
+.Posicion_BotonP{
+    padding-top: 40px;
+    padding-left: 247px;
+    padding-right: 240px;
 }
 
-#Cuadro2{
-    position: relative;
-    top: 0px;
-    left: 700px;
-    height: 400px;
-    width: 700px;
-    background-color: #F6F5F5;
-    color: black;
+.Boton-Ingresar{
+    background-color: #101010;
+    color: white;
+    height: 40px;
+    width: 150px;
+    font-size: 20px;
+    cursor: pointer;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .Cuadro-General{
     position: relative;
     z-index: 2;
     overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 
@@ -474,6 +477,8 @@ h4{
 }
 
 .menu{
+    padding-top: 80px;
+    padding-bottom: 160px;
     display:flex;
 }
 
