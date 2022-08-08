@@ -41,4 +41,11 @@ public class ClienteController {
         return "/cliente/Sign_Up";
     }
     
+    @RequestMapping(path = "/cliente/Shopping_Cart", method = RequestMethod.GET)
+    public String loadCart(){
+        System.out.println("Cargando página...");
+        
+        return "/cliente/Shopping_Cart";
+    }
+    
 }
