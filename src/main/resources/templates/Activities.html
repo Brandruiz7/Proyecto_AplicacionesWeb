@@ -1,125 +1,167 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-    <head>
-        <title>Actividades</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Brandon Ruiz">
-        <meta name="description" content="Este espacio, contendrá las actividades a realizar">
-        <link th:href="@{css/menu.css}" rel="stylesheet" type="text/css"/>
-        <link th:href="@{css/actividades.css}" rel="stylesheet" type="text/css"/>
-        <link th:href="@{css/Body_FooterLinks.css}" rel="stylesheet" type="text/css"/>
-    </head>
-    <body id="Main" class="root">
-        <a name="Arriba"></a>
-        <!-- Para montar el header se inicializa con su encapsulador
-        y dentro se hacen las subdiviciones necesarias. Para montarlo
-        es necesario imaginar esa organización de datos y pasarlo a 
-        código. En este caso se hace un div para los enlaces y otro
-        para el ícono de cuenta.-->
-        <header th:replace="layout/header :: header"></header>
 
-        <div id="page-body" class="body">
-            <div class="Posicion_Articulo">
-                <div class="Contenedor-Actividades">
-                    <div class="Info_Articulo">
-                        <br/>
-                        <br/>
-                        <articule>
-                            <header class="Subtitulo_Articulo">Concierto de Jazz al aire libre</header>
-                            <figure class="Fig-Articulo">
-                                <img src="/img/ConciertoJazz.jpg" alt="Concierto Jazz"
-                                     width="100%"/>
-                                <figcaption style="text-align: center;">
-                                    El grupo internacional se ha presentado en más de 20 países
-                                </figcaption>
-                                <br/>
-                                <article class="Desc-Articulo">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing 
-                                        elit, sed do eiusmod tempor incididunt ut labore et 
-                                        dolore magna aliqua. Ut enim ad minim veniam, quis 
-                                        nostrud exercitation ullamco laboris nisi ut aliquip 
-                                        ex ea commodo consequat. Duis aute irure dolor in
-                                        reprehenderit in voluptate velit esse cillum dolore 
-                                        eu fugiat nulla pariatur. Excepteur sint occaecat 
-                                        cupidatat non proident, sunt in culpa qui officia 
-                                        deserunt mollit anim id est laborum.
-                                    </p>
-                                    <p>
-                                        Fusce convallis, mauris imperdiet gravida bibendum, 
-                                        nisl turpis suscipit mauris, sed placerat ipsum urna
-                                        sed risus. In convallis tellus a mauris. Curabitur 
-                                        non elit ut libero tristique sodales. Mauris a lacus.
-                                        Donec mattis semper leo. In hac habitasse platea 
-                                        dictumst. Vivamus facilisis diam at odio. Mauris 
-                                        dictum, nisi eget consequat elementum, lacus ligula
-                                        molestie metus, non feugiat orci magna ac sem. Donec
-                                        turpis. Donec vitae metus. Morbi tristique neque eu 
-                                        mauris. Quisque gravida ipsum non sapien. Proin 
-                                        turpis lacus, scelerisque vitae, elementum at, 
-                                        lobortis ac, quam. Aliquam dictum eleifend risus. In
-                                        hac habitasse platea dictumst. Etiam sit amet diam. 
-                                        Suspendisse odio. Suspendisse nunc. In semper 
-                                        bibendum libero.
-                                    </p>
-                                </article>
-                                <div class="Boton-Ubi">
-                                    <button type="button" class="Boton-Reservar">Reservar</button>
+<head th:replace="layout/header :: head">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Brandon Ruiz">
+    <meta name="description" content="Este espacio, contendrá las actividades a realizar">
+    <link th:href="@{css/actividades.css}" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="Main" class="root">
+    <a name="Arriba"></a>
+    <!-- Para montar el header se inicializa con su encapsulador
+            y dentro se hacen las subdiviciones necesarias. Para montarlo
+            es necesario imaginar esa organización de datos y pasarlo a 
+            código. En este caso se hace un div para los enlaces y otro
+            para el ícono de cuenta.-->
+    <header th:replace="layout/header :: header"></header>
+
+    <div id="page-body" class="body">
+        <div class="Posicion_Articulo">
+            <div class="Info_Articulo">
+                <br />
+                <br />
+                <articule>
+                    <header class="Subtitulo_Articulo">Concierto de Jazz al aire libre</header>
+                    <figure class="Fig-Articulo">
+                        <img src="/img/ConciertoJazz.jpg" alt="Concierto Jazz" width="100%" />
+                        <figcaption style="text-align: center;">
+                            El grupo internacional se ha presentado en más de 20 países
+                        </figcaption>
+                        <br />
+                        <article class="Desc-Articulo">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua. Ut enim ad minim veniam, quis
+                                nostrud exercitation ullamco laboris nisi ut aliquip
+                                ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit in voluptate velit esse cillum dolore
+                                eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa qui officia
+                                deserunt mollit anim id est laborum.
+                            </p>
+                            <p>
+                                Fusce convallis, mauris imperdiet gravida bibendum,
+                                nisl turpis suscipit mauris, sed placerat ipsum urna
+                                sed risus. In convallis tellus a mauris. Curabitur
+                                non elit ut libero tristique sodales. Mauris a lacus.
+                                Donec mattis semper leo. In hac habitasse platea
+                                dictumst. Vivamus facilisis diam at odio. Mauris
+                                dictum, nisi eget consequat elementum, lacus ligula
+                                molestie metus, non feugiat orci magna ac sem. Donec
+                                turpis. Donec vitae metus. Morbi tristique neque eu
+                                mauris. Quisque gravida ipsum non sapien. Proin
+                                turpis lacus, scelerisque vitae, elementum at,
+                                lobortis ac, quam. Aliquam dictum eleifend risus. In
+                                hac habitasse platea dictumst. Etiam sit amet diam.
+                                Suspendisse odio. Suspendisse nunc. In semper
+                                bibendum libero.
+                            </p>
+                        </article>
+                        <div class="Boton-Ubi">
+                            <button data-toggle="modal" data-target="#exampleModalCenter" type="button"
+                                class="Boton-Reservar">Reservar</button>
+                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Información de evento
+                                            </h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Se ha enviado la información sobre este evento al correo electrónico
+                                            registrado
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
                                 </div>
-                            </figure>
-                        </articule>
-                        <br/>
-                        <br/>
-                        <articule>
-                            <header class="Subtitulo_Articulo">Noche Mexicana</header>
-                            <figure class="Fig-Articulo">
-                                <br/>
-                                <img src="/img/Noche_Mexicana.jpg" alt="Noche-Mexicana"
-                                     width="100%"/>
-                                <figcaption style="text-align: center;">
-                                    Tendremos Chefs especializados
-                                </figcaption>
-                                <br/>
-                                <article class="Desc-Articulo">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing 
-                                        elit, sed do eiusmod tempor incididunt ut labore et 
-                                        dolore magna aliqua. Ut enim ad minim veniam, quis 
-                                        nostrud exercitation ullamco laboris nisi ut aliquip 
-                                        ex ea commodo consequat. Duis aute irure dolor in
-                                        reprehenderit in voluptate velit esse cillum dolore 
-                                        eu fugiat nulla pariatur. Excepteur sint occaecat 
-                                        cupidatat non proident, sunt in culpa qui officia 
-                                        deserunt mollit anim id est laborum.
-                                    </p>
-                                    <p>
-                                        Fusce convallis, mauris imperdiet gravida bibendum, 
-                                        nisl turpis suscipit mauris, sed placerat ipsum urna
-                                        sed risus. In convallis tellus a mauris. Curabitur 
-                                        non elit ut libero tristique sodales. Mauris a lacus.
-                                        Donec mattis semper leo. In hac habitasse platea 
-                                        dictumst. Vivamus facilisis diam at odio. Mauris 
-                                        dictum, nisi eget consequat elementum, lacus ligula
-                                        molestie metus, non feugiat orci magna ac sem. Donec
-                                        turpis. Donec vitae metus. Morbi tristique neque eu 
-                                        mauris. Quisque gravida ipsum non sapien. Proin 
-                                        turpis lacus, scelerisque vitae, elementum at, 
-                                        lobortis ac, quam. Aliquam dictum eleifend risus. In
-                                        hac habitasse platea dictumst. Etiam sit amet diam. 
-                                        Suspendisse odio. Suspendisse nunc. In semper 
-                                        bibendum libero.
-                                    </p>
-                                </article>
-                                <div class="Boton-Ubi">
-                                    <button type="button" class="Boton-Reservar">Reservar</button>
+                            </div>
+                        </div>
+                    </figure>
+                </articule>
+                <br />
+                <br />
+                <articule>
+                    <header class="Subtitulo_Articulo">Noche Mexicana</header>
+                    <figure class="Fig-Articulo">
+                        <br />
+                        <img src="/img/Noche_Mexicana.jpg" alt="Noche-Mexicana" width="100%" />
+                        <figcaption style="text-align: center;">
+                            Tendremos Chefs especializados
+                        </figcaption>
+                        <br />
+                        <article class="Desc-Articulo">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua. Ut enim ad minim veniam, quis
+                                nostrud exercitation ullamco laboris nisi ut aliquip
+                                ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit in voluptate velit esse cillum dolore
+                                eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa qui officia
+                                deserunt mollit anim id est laborum.
+                            </p>
+                            <p>
+                                Fusce convallis, mauris imperdiet gravida bibendum,
+                                nisl turpis suscipit mauris, sed placerat ipsum urna
+                                sed risus. In convallis tellus a mauris. Curabitur
+                                non elit ut libero tristique sodales. Mauris a lacus.
+                                Donec mattis semper leo. In hac habitasse platea
+                                dictumst. Vivamus facilisis diam at odio. Mauris
+                                dictum, nisi eget consequat elementum, lacus ligula
+                                molestie metus, non feugiat orci magna ac sem. Donec
+                                turpis. Donec vitae metus. Morbi tristique neque eu
+                                mauris. Quisque gravida ipsum non sapien. Proin
+                                turpis lacus, scelerisque vitae, elementum at,
+                                lobortis ac, quam. Aliquam dictum eleifend risus. In
+                                hac habitasse platea dictumst. Etiam sit amet diam.
+                                Suspendisse odio. Suspendisse nunc. In semper
+                                bibendum libero.
+                            </p>
+                        </article>
+                        <div class="Boton-Ubi">
+                            <button data-toggle="modal" data-target="#exampleModalCenter" type="button"
+                                class="Boton-Reservar">Reservar</button>
+                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Información de evento
+                                            </h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Se ha enviado la información sobre este evento al correo electrónico
+                                            registrado
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
                                 </div>
-                            </figure>
-                        </articule>
-                    </div>
-                </div>
+                            </div>
+                        </div>
+                    </figure>
+                </articule>
             </div>
         </div>
-        <footer th:replace="layout/footer :: footer" ></footer>
-    </body>
+    </div>
+    <footer th:replace="layout/footer :: footer"></footer>
+</body>
+
 </html>

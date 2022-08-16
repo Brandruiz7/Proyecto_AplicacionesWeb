@@ -1,194 +1,190 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-    <head>
-        <title>Sobre Nosotros</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Brandon Ruiz">
-        <meta name="author" content="Laura Segreda">
-        <meta name="description" content="Este espacio, contendrá los datos sobre
-              la empresa expuestos en la página web"> 
-        <link th:href="@{css/menu.css}" rel="stylesheet" type="text/css"/>
-        <link th:href="@{css/Body_FooterLinks.css}" rel="stylesheet" type="text/css"/> 
-    </head>
-    <body id="Main" class="root">
-        <a name="Arriba"></a>
-        <!-- Para montar el header se inicializa con su encapsulador
+
+<head th:replace="layout/header :: head">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Brandon Ruiz">
+    <meta name="author" content="Laura Segreda">
+    <meta name="description" content="Este espacio, contendrá los datos sobre
+              la empresa expuestos en la página web">
+</head>
+
+<body id="Main" class="root">
+    <a name="Arriba"></a>
+    <!-- Para montar el header se inicializa con su encapsulador
         y dentro se hacen las subdiviciones necesarias. Para montarlo
         es necesario imaginar esa organización de datos y pasarlo a 
         código. En este caso se hace un div para los enlaces y otro
         para el ícono de cuenta.-->
-        <header th:replace="layout/header :: header"></header>
+    <header th:replace="layout/header :: header"></header>
 
-        <div id="page-body" class="body">
-            <div class="Posicion_Articulo">
-                <div class="Contenedor">
-                    <div class="Web-Titulo">Sobre Nosotros</div>
-                    <div class="Barra-Info">
-                        <span class="Contenido">
-                            Restaurante &gt; Sobre Nosotros
-                        </span>
-                    </div>
-                    <div class="Info_Articulo">
-                        <h3><strong>Acá va la reseña acerca de la empresa</strong></h3>
+    <div id="page-body" class="body">
+        <div class="Posicion_Articulo">
+            <div class="Contenedor">
+                <div class="Web-Titulo">Sobre Nosotros</div>
+                <div class="Barra-Info">
+                    <span class="Contenido">
+                        Restaurante &gt; Sobre Nosotros
+                    </span>
+                </div>
+                <div class="Info_Articulo">
+                    <h3><strong>Acá va la reseña acerca de la empresa</strong></h3>
 
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing 
-                            elit, sed do eiusmod tempor incididunt ut labore et 
-                            dolore magna aliqua. Ut enim ad minim veniam, quis 
-                            nostrud exercitation ullamco laboris nisi ut aliquip 
-                            ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore 
-                            eu fugiat nulla pariatur. Excepteur sint occaecat 
-                            cupidatat non proident, sunt in culpa qui officia 
-                            deserunt mollit anim id est laborum.
-                        </p>
-                        <p>
-                            Fusce convallis, mauris imperdiet gravida bibendum, 
-                            nisl turpis suscipit mauris, sed placerat ipsum urna
-                            sed risus. In convallis tellus a mauris. Curabitur 
-                            non elit ut libero tristique sodales. Mauris a lacus.
-                            Donec mattis semper leo. In hac habitasse platea 
-                            dictumst. Vivamus facilisis diam at odio. Mauris 
-                            dictum, nisi eget consequat elementum, lacus ligula
-                            molestie metus, non feugiat orci magna ac sem. Donec
-                            turpis. Donec vitae metus. Morbi tristique neque eu 
-                            mauris. Quisque gravida ipsum non sapien. Proin 
-                            turpis lacus, scelerisque vitae, elementum at, 
-                            lobortis ac, quam. Aliquam dictum eleifend risus. In
-                            hac habitasse platea dictumst. Etiam sit amet diam. 
-                            Suspendisse odio. Suspendisse nunc. In semper 
-                            bibendum libero.
-                        </p>
-                        <p>
-                            Proin nonummy, lacus eget pulvinar lacinia, pede 
-                            felis dignissim leo, vitae tristique magna lacus 
-                            sit amet eros. Nullam ornare. Praesent odio ligula,
-                            dapibus sed, tincidunt eget, dictum ac, nibh. Nam 
-                            quis lacus. Nunc eleifend molestie velit. Morbi 
-                            lobortis quam eu velit. Donec euismod vestibulum 
-                            massa. Donec non lectus. Aliquam commodo lacus sit 
-                            amet nulla. Cras dignissim elit et augue. Nullam non
-                            diam. Pellentesque habitant morbi tristique senectus
-                            et netus et malesuada fames ac turpis egestas. In 
-                            hac habitasse platea dictumst. Aenean vestibulum. 
-                            Sed lobortis elit quis lectus. Nunc sed lacus at 
-                            augue bibendum dapibus.
-                        </p>
-                        <p>
-                            Aliquam vehicula sem ut pede. Cras purus lectus, 
-                            egestas eu, vehicula at, imperdiet sed, nibh. Morbi
-                            consectetuer luctus felis. Donec vitae nisi. Aliquam
-                            tincidunt feugiat elit. Duis sed elit ut turpis 
-                            ullamcorper feugiat. Praesent pretium, mauris sed 
-                            fermentum hendrerit, nulla lorem iaculis magna, 
-                            pulvinar scelerisque urna tellus a justo. Suspendisse
-                            pulvinar massa in metus. Duis quis quam. Proin justo.
-                            Curabitur ac sapien. Nam erat. Praesent ut quam.
-                        </p>
-                        <p>
-                            Vivamus commodo, augue et laoreet euismod, sem sapien
-                            tempor dolor, ac egestas sem ligula quis lacus. Donec
-                            vestibulum tortor ac lacus. Sed posuere vestibulum 
-                            nisl. Curabitur eleifend fermentum justo. Nullam 
-                            imperdiet. Integer sit amet mauris imperdiet risus 
-                            sollicitudin rutrum. Ut vitae turpis. Nulla facilisi.
-                            Quisque tortor velit, scelerisque et, facilisis vel,
-                            tempor sed, urna. Vivamus nulla elit, vestibulum 
-                            eget, semper et, scelerisque eget, lacus. 
-                            Pellentesque viverra purus. Quisque elit. Donec ut 
-                            dolor.
-                        </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore
+                        eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum.
+                    </p>
+                    <p>
+                        Fusce convallis, mauris imperdiet gravida bibendum,
+                        nisl turpis suscipit mauris, sed placerat ipsum urna
+                        sed risus. In convallis tellus a mauris. Curabitur
+                        non elit ut libero tristique sodales. Mauris a lacus.
+                        Donec mattis semper leo. In hac habitasse platea
+                        dictumst. Vivamus facilisis diam at odio. Mauris
+                        dictum, nisi eget consequat elementum, lacus ligula
+                        molestie metus, non feugiat orci magna ac sem. Donec
+                        turpis. Donec vitae metus. Morbi tristique neque eu
+                        mauris. Quisque gravida ipsum non sapien. Proin
+                        turpis lacus, scelerisque vitae, elementum at,
+                        lobortis ac, quam. Aliquam dictum eleifend risus. In
+                        hac habitasse platea dictumst. Etiam sit amet diam.
+                        Suspendisse odio. Suspendisse nunc. In semper
+                        bibendum libero.
+                    </p>
+                    <p>
+                        Proin nonummy, lacus eget pulvinar lacinia, pede
+                        felis dignissim leo, vitae tristique magna lacus
+                        sit amet eros. Nullam ornare. Praesent odio ligula,
+                        dapibus sed, tincidunt eget, dictum ac, nibh. Nam
+                        quis lacus. Nunc eleifend molestie velit. Morbi
+                        lobortis quam eu velit. Donec euismod vestibulum
+                        massa. Donec non lectus. Aliquam commodo lacus sit
+                        amet nulla. Cras dignissim elit et augue. Nullam non
+                        diam. Pellentesque habitant morbi tristique senectus
+                        et netus et malesuada fames ac turpis egestas. In
+                        hac habitasse platea dictumst. Aenean vestibulum.
+                        Sed lobortis elit quis lectus. Nunc sed lacus at
+                        augue bibendum dapibus.
+                    </p>
+                    <p>
+                        Aliquam vehicula sem ut pede. Cras purus lectus,
+                        egestas eu, vehicula at, imperdiet sed, nibh. Morbi
+                        consectetuer luctus felis. Donec vitae nisi. Aliquam
+                        tincidunt feugiat elit. Duis sed elit ut turpis
+                        ullamcorper feugiat. Praesent pretium, mauris sed
+                        fermentum hendrerit, nulla lorem iaculis magna,
+                        pulvinar scelerisque urna tellus a justo. Suspendisse
+                        pulvinar massa in metus. Duis quis quam. Proin justo.
+                        Curabitur ac sapien. Nam erat. Praesent ut quam.
+                    </p>
+                    <p>
+                        Vivamus commodo, augue et laoreet euismod, sem sapien
+                        tempor dolor, ac egestas sem ligula quis lacus. Donec
+                        vestibulum tortor ac lacus. Sed posuere vestibulum
+                        nisl. Curabitur eleifend fermentum justo. Nullam
+                        imperdiet. Integer sit amet mauris imperdiet risus
+                        sollicitudin rutrum. Ut vitae turpis. Nulla facilisi.
+                        Quisque tortor velit, scelerisque et, facilisis vel,
+                        tempor sed, urna. Vivamus nulla elit, vestibulum
+                        eget, semper et, scelerisque eget, lacus.
+                        Pellentesque viverra purus. Quisque elit. Donec ut
+                        dolor.
+                    </p>
+                    <br>
+                    <article>
+                        <figure>
+                            <header class="Subtitulo_Articulo" style="text-align: center;">Conoce a nuestros Chef
+                            </header>
+                            <p>
+                                Duis volutpat elit et erat. In at nulla at nisl
+                                condimentum aliquet. Quisque elementum pharetra
+                                lacus. Nunc gravida arcu eget nunc. Nulla iaculis
+                                egestas magna. Aliquam erat volutpat. Sed pellentesque
+                                orci. Etiam lacus lorem, iaculis sit amet, pharetra
+                                quis, imperdiet sit amet, lectus. Integer quis elit
+                                ac mi aliquam pretium. Nullam mauris orci, porttitor
+                                eget, sollicitudin non, vulputate id, risus. Donec
+                                varius enim nec sem. Nam aliquam lacinia enim.
+                                Quisque eget lorem eu purus dignissim ultricies.
+                                Fusce porttitor hendrerit ante. Mauris urna diam,
+                                cursus id, mattis eget, tempus sit amet, risus.
+                                Curabitur eu felis. Sed eu mi. Nullam lectus mauris,
+                                luctus a, mattis ac, tempus non, leo. Cras mi nulla,
+                                rhoncus id, laoreet ut, ultricies id, odio.
+                            </p>
+                            <img src="img/pexels-tirachard-kumtanom-887827.jpg" alt="Chef1" width="100%" />
+                            <figcaption style="text-align: center;">Chef: Nombre del chef</figcaption>
+                        </figure>
+                    </article>
+
+                    <article>
+                        <figure>
+                            <p>
+                                Duis volutpat elit et erat. In at nulla at nisl
+                                condimentum aliquet. Quisque elementum pharetra
+                                lacus. Nunc gravida arcu eget nunc. Nulla iaculis
+                                egestas magna. Aliquam erat volutpat. Sed pellentesque
+                                orci. Etiam lacus lorem, iaculis sit amet, pharetra
+                                quis, imperdiet sit amet, lectus. Integer quis elit
+                                ac mi aliquam pretium. Nullam mauris orci, porttitor
+                                eget, sollicitudin non, vulputate id, risus. Donec
+                                varius enim nec sem. Nam aliquam lacinia enim.
+                                Quisque eget lorem eu purus dignissim ultricies.
+                                Fusce porttitor hendrerit ante. Mauris urna diam,
+                                cursus id, mattis eget, tempus sit amet, risus.
+                                Curabitur eu felis. Sed eu mi. Nullam lectus mauris,
+                                luctus a, mattis ac, tempus non, leo. Cras mi nulla,
+                                rhoncus id, laoreet ut, ultricies id, odio.
+                            </p>
+                            <img src="img/pexels-kampus-production-6684767.jpg" alt="Chef2" width="100%" />
+                            <figcaption style="text-align: center;">Chef: Nombre del chef</figcaption>
+                        </figure>
                         <br>
-                        <article>
-                            <figure>
-                                <header class="Subtitulo_Articulo"
-                                        style="text-align: center;">Conoce a nuestros Chef</header>
-                                <p>
-                                    Duis volutpat elit et erat. In at nulla at nisl 
-                                    condimentum aliquet. Quisque elementum pharetra 
-                                    lacus. Nunc gravida arcu eget nunc. Nulla iaculis 
-                                    egestas magna. Aliquam erat volutpat. Sed pellentesque
-                                    orci. Etiam lacus lorem, iaculis sit amet, pharetra 
-                                    quis, imperdiet sit amet, lectus. Integer quis elit 
-                                    ac mi aliquam pretium. Nullam mauris orci, porttitor
-                                    eget, sollicitudin non, vulputate id, risus. Donec 
-                                    varius enim nec sem. Nam aliquam lacinia enim. 
-                                    Quisque eget lorem eu purus dignissim ultricies. 
-                                    Fusce porttitor hendrerit ante. Mauris urna diam, 
-                                    cursus id, mattis eget, tempus sit amet, risus. 
-                                    Curabitur eu felis. Sed eu mi. Nullam lectus mauris,
-                                    luctus a, mattis ac, tempus non, leo. Cras mi nulla,
-                                    rhoncus id, laoreet ut, ultricies id, odio.
-                                </p>
-                                <img src="img/pexels-tirachard-kumtanom-887827.jpg" alt="Chef1"
-                                     width="100%"/>
-                                <figcaption style="text-align: center;"
-                                            >Chef: Nombre del chef</figcaption>
-                            </figure>                            
-                        </article>
+                    </article>
 
-                        <article>
-                            <figure>                               
-                                <p>
-                                    Duis volutpat elit et erat. In at nulla at nisl 
-                                    condimentum aliquet. Quisque elementum pharetra 
-                                    lacus. Nunc gravida arcu eget nunc. Nulla iaculis 
-                                    egestas magna. Aliquam erat volutpat. Sed pellentesque
-                                    orci. Etiam lacus lorem, iaculis sit amet, pharetra 
-                                    quis, imperdiet sit amet, lectus. Integer quis elit 
-                                    ac mi aliquam pretium. Nullam mauris orci, porttitor
-                                    eget, sollicitudin non, vulputate id, risus. Donec 
-                                    varius enim nec sem. Nam aliquam lacinia enim. 
-                                    Quisque eget lorem eu purus dignissim ultricies. 
-                                    Fusce porttitor hendrerit ante. Mauris urna diam, 
-                                    cursus id, mattis eget, tempus sit amet, risus. 
-                                    Curabitur eu felis. Sed eu mi. Nullam lectus mauris,
-                                    luctus a, mattis ac, tempus non, leo. Cras mi nulla,
-                                    rhoncus id, laoreet ut, ultricies id, odio.
-                                </p>
-                                <img src="img/pexels-kampus-production-6684767.jpg"
-                                     alt="Chef2" width="100%"/>
-                                <figcaption style="text-align: center;"
-                                            >Chef: Nombre del chef</figcaption>
-                            </figure>
-                            <br>
-                        </article>
-
-                        <article>
-                            <figure>
-                                <header class="Subtitulo_Articulo"
-                                        style="text-align: center;">Nuestras Instalaciones</header>
-                                <p>
-                                    Duis volutpat elit et erat. In at nulla at nisl 
-                                    condimentum aliquet. Quisque elementum pharetra 
-                                    lacus. Nunc gravida arcu eget nunc. Nulla iaculis 
-                                    egestas magna. Aliquam erat volutpat. Sed pellentesque
-                                    orci. Etiam lacus lorem, iaculis sit amet, pharetra 
-                                    quis, imperdiet sit amet, lectus. Integer quis elit 
-                                    ac mi aliquam pretium. Nullam mauris orci, porttitor
-                                    eget, sollicitudin non, vulputate id, risus. Donec 
-                                    varius enim nec sem. Nam aliquam lacinia enim. 
-                                    Quisque eget lorem eu purus dignissim ultricies. 
-                                    Fusce porttitor hendrerit ante. Mauris urna diam, 
-                                    cursus id, mattis eget, tempus sit amet, risus. 
-                                    Curabitur eu felis. Sed eu mi. Nullam lectus mauris,
-                                    luctus a, mattis ac, tempus non, leo. Cras mi nulla,
-                                    rhoncus id, laoreet ut, ultricies id, odio.
-                                </p>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d653.981493620269!2d-83.9427835062714!3d9.867443515168564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0dffd10e08213%3A0x4c1e7691d94bc347!2sEl%20Molino%20Gastropub!5e0!3m2!1ses-419!2scr!4v1657668712835!5m2!1ses-419!2scr" 
-                                        width="100%" height="700" style="border:0;
-                                        " allowfullscreen="" loading="lazy" 
-                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                <figcaption style="text-align: center;"
-                                            >Dirección extraída de Google Maps</figcaption>
-                            </figure>                            
-                        </article>                        
-                    </div>
+                    <article>
+                        <figure>
+                            <header class="Subtitulo_Articulo" style="text-align: center;">Nuestras Instalaciones
+                            </header>
+                            <p>
+                                Duis volutpat elit et erat. In at nulla at nisl
+                                condimentum aliquet. Quisque elementum pharetra
+                                lacus. Nunc gravida arcu eget nunc. Nulla iaculis
+                                egestas magna. Aliquam erat volutpat. Sed pellentesque
+                                orci. Etiam lacus lorem, iaculis sit amet, pharetra
+                                quis, imperdiet sit amet, lectus. Integer quis elit
+                                ac mi aliquam pretium. Nullam mauris orci, porttitor
+                                eget, sollicitudin non, vulputate id, risus. Donec
+                                varius enim nec sem. Nam aliquam lacinia enim.
+                                Quisque eget lorem eu purus dignissim ultricies.
+                                Fusce porttitor hendrerit ante. Mauris urna diam,
+                                cursus id, mattis eget, tempus sit amet, risus.
+                                Curabitur eu felis. Sed eu mi. Nullam lectus mauris,
+                                luctus a, mattis ac, tempus non, leo. Cras mi nulla,
+                                rhoncus id, laoreet ut, ultricies id, odio.
+                            </p>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d653.981493620269!2d-83.9427835062714!3d9.867443515168564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0dffd10e08213%3A0x4c1e7691d94bc347!2sEl%20Molino%20Gastropub!5e0!3m2!1ses-419!2scr!4v1657668712835!5m2!1ses-419!2scr"
+                                width="100%" height="700" style="border:0;
+                                        " allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <figcaption style="text-align: center;">Dirección extraída de Google Maps</figcaption>
+                        </figure>
+                    </article>
                 </div>
             </div>
         </div>
+    </div>
 
-        <footer th:replace="layout/footer :: footer" ></footer>
-    </body>
+    <footer th:replace="layout/footer :: footer"></footer>
+</body>
+
 </html>

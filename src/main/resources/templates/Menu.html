@@ -1,117 +1,119 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-    <head>
-        <title>Nuestro menú</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Brandon Ruiz">
-        <meta name="description" content="Este espacio contendrá "> 
-        <link th:href="@{css/menu.css}" rel="stylesheet" type="text/css"/>
-    </head>
-    <body id="Main" class="root">
-        <a name="Arriba"></a>
-        <!-- Para montar el header se inicializa con su encapsulador
+
+<head th:replace="layout/header :: head">
+    <title>Nuestro menú</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Brandon Ruiz">
+    <meta name="description" content="Este espacio contendrá ">
+</head>
+
+<body id="Main" class="root">
+    <a name="Arriba"></a>
+    <!-- Para montar el header se inicializa con su encapsulador
         y dentro se hacen las subdiviciones necesarias. Para montarlo
         es necesario imaginar esa organización de datos y pasarlo a 
         código. En este caso se hace un div para los enlaces y otro
         para el ícono de cuenta.-->
-        <header th:replace="layout/header :: header"></header>
+    <header th:replace="layout/header :: header"></header>
 
-        <div id="page-body" class="body"> 
-            <div id="menu-container" class="menu">
-                <div id = left class="menu-left">
-                    <center>
-                        <h2>Entradas</h2>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <img src="/img/_jennduncan-2_1_.jpg" width="60%"/>
-                        <h2>Bebidas</h2>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                    </center>
-                </div>
-                <div id="center" class="menu-center">
-                    <center>
-                        <h1>Menú</h1>
-                        <img src="/img/fast-food-restaurant.jpg" width="60%"/>
-                        <h2>Almuerzos</h2>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <img src="/img/grilled-prawn.jpg" width="60%"/>
-                    </center>
-                </div>
-                <div id="left" class="menu-left">
-                    <center>
-                        <h2>Menú Infantil</h2>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <img src="img/screen-shot-2020-12-07-at-11-15-41-am-1607358551.png" width="60%"/>
-                        <h2>Postres</h2>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                        <p>Texto...…………………………...…….$0000</p>
-                    </center>
-                </div>
+    <div id="page-body" class="body">
+        <div id="menu-container" class="menu">
+            <div id=left class="menu-left">
+                <center>
+                    <h2>Entradas</h2>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <img src="/img/_jennduncan-2_1_.jpg" width="60%" />
+                    <h2>Bebidas</h2>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                </center>
             </div>
-
+            <div id="center" class="menu-center">
+                <center>
+                    <h1>Menú</h1>
+                    <img src="/img/fast-food-restaurant.jpg" width="60%" />
+                    <h2>Almuerzos</h2>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <img src="/img/grilled-prawn.jpg" width="60%" />
+                </center>
+            </div>
+            <div id="left" class="menu-left">
+                <center>
+                    <h2>Menú Infantil</h2>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <img src="img/screen-shot-2020-12-07-at-11-15-41-am-1607358551.png" width="60%" />
+                    <h2>Postres</h2>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                    <p>Texto...…………………………...…….$0000</p>
+                </center>
+            </div>
         </div>
-        <footer th:replace="layout/footer :: footer"></footer>
-    </body>
+
+    </div>
+    <footer th:replace="layout/footer :: footer"></footer>
+</body>
+
 </html>

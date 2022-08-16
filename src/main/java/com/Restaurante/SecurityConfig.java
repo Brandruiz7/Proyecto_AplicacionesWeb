@@ -7,6 +7,8 @@
  */
 package com.Restaurante;
 
+import com.Restaurante.service.UsuarioDetailsServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -20,27 +22,23 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
-
+    
+    @Autowired
+    UsuarioDetailsServiceImpl userDetailsService;
     //El siguiente método funciona para hacer la autenticación del usuario
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth.inMemoryAuthentication()
-                .withUser("admin")
-                .password("{noop}123") //noop es para NO encriptar la contraseña
-                .roles("ADMIN", "CLIENTE")
-                .and()
-                .withUser("cliente")
-                .password("{noop}123") //noop es para NO encriptar la contraseña
-                .roles("CLIENTE")
-                .and();
+        auth.userDetailsService(userDetailsService);
     }
 
     //Definir la configuración de accesos (HAY QUE MODIFICAR LOS ACCESOS)
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
-                .antMatchers("/cuenta/nuevo", "/cuenta/guardar",
-                        "/cuenta/modificar/**", "/cuenta/eliminar/**")
+                .antMatchers("About_Us","Activities","Contact_Us",
+                        "Index","Menu","Orders","Privacy_Policies",
+                        "Terms","/cliente/Shopping_Cart"
+                        ,"/cuenta/Configuration_Account")
                 .hasAnyRole("ADMIN", "CLIENTE")
                 .antMatchers("/cuenta/listado")
                 .hasRole("ADMIN") //Roles asignados

@@ -263,7 +263,8 @@ a{
     margin-top: 10px;
     margin-left: 150px;
     margin-right:  120px;
-    padding-left: 120px;
+    padding: 0px;
+    text-align: center;
     border-bottom-left-radius: 9px;
     border-bottom-right-radius:  8px;
     border-top-left-radius: 8px;
@@ -292,7 +293,8 @@ a{
     margin-top: 10px;
     margin-left: 150px;
     margin-right:  120px;
-    padding-left: 120px;
+    padding: 0px;
+    text-align: center;
     border-bottom-left-radius: 9px;
     border-bottom-right-radius:  8px;
     border-top-left-radius: 8px;

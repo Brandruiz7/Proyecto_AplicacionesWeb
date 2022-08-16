@@ -10,12 +10,6 @@
     overflow: hidden;
 }
 
-.Contenedor-Actividades{
-    position: relative;
-    z-index: 2;
-    overflow: hidden;
-}
-
 .Web-Titulo{
     font-size: 45px;
     font-weight: 800;
