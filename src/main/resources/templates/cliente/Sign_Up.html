@@ -1,108 +1,106 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 
-<head th:replace="layout/header :: head">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Brandon Ruiz">
-    <meta name="description" content="Este espacio, contendrá los términos
+    <head th:replace="layout/header :: head">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Brandon Ruiz">
+        <meta name="description" content="Este espacio, contendrá los términos
               y condiciones establecidos para la página web">
-</head>
+    </head>
 
-<body id="Main" class="root">
-    <a name="Arriba"></a>
-    <!-- Para montar el header se inicializa con su encapsulador
-            y dentro se hacen las subdiviciones necesarias. Para montarlo
-            es necesario imaginar esa organización de datos y pasarlo a 
-            código. En este caso se hace un div para los enlaces y otro
-            para el ícono de cuenta.-->
-    <header th:replace="layout/header :: header"></header>
+    <body id="Main" class="root">
+        <a name="Arriba"></a>
+        <!-- Para montar el header se inicializa con su encapsulador
+                y dentro se hacen las subdiviciones necesarias. Para montarlo
+                es necesario imaginar esa organización de datos y pasarlo a 
+                código. En este caso se hace un div para los enlaces y otro
+                para el ícono de cuenta.-->
+        <header th:replace="layout/header :: header"></header>
 
-    <div id="page-body" class="body">
-        <h1 style="align-items: center; padding-top: 30px; align-content: center;
-                text-align: center !important;">Registrar Cuenta</h1>
-        <div class="container" style="padding-top: 80px;
+        <div id="page-body" class="body">
+            <h1 style="align-items: center; padding-top: 30px; align-content: center;
+                text-align: center !important;">[[#{registrarse.titulo}]]</h1>
+            <div class="container" style="padding-top: 80px;
                  padding-bottom: 30px">
-            <form style="padding-bottom: 40px">
-                <div class="row">
-                    <div class="col">
-                        <label>Nombre</label>
-                        <input type="text" class="form-control" placeholder="Nombre">
+                <form style="padding-bottom: 40px">
+                    <div class="row">
+                        <div class="col">
+                            <label>[[#{registrarse.nombre}]]</label>
+                            <input type="text" class="form-control" placeholder="Nombre">
+                        </div>
+                        <div class="col">
+                            <label>[[#{registrarse.apellido1}]]</label>
+                            <input type="text" class="form-control" placeholder="Apellido 1">
+                        </div>
+                        <div class="col">
+                            <label>[[#{registrarse.apellido2}]]</label>
+                            <input type="text" class="form-control" placeholder="Apellido 2">
+                        </div>
                     </div>
-                    <div class="col">
-                        <label>Apellido P</label>
-                        <input type="text" class="form-control" placeholder="Apellido 1">
+                </form>
+                <form style="padding-bottom: 40px">
+                    <div class="row">
+                        <div class="col">
+                            <label>[[#{registrarse.correo}]]</label>
+                            <input type="text" class="form-control" placeholder="Correo">
+                        </div>
                     </div>
-                    <div class="col">
-                        <label>Apellido M</label>
-                        <input type="text" class="form-control" placeholder="Apellido 2">
+                </form>
+                <form style="padding-bottom: 40px">
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="inputPassword4">[[#{registrarse.pass}]]</label>
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                        </div>
                     </div>
+                </form>
+                <form style="padding-bottom: 40px">
+                    <div class="row">
+                        <div class="col">
+                            <label>[[#{registrarse.provincia}]]</label>
+                            <input type="text" class="form-control" placeholder="Provincia">
+                        </div>
+                        <div class="col">
+                            <label>[[#{registrarse.canton}]]</label>
+                            <input type="text" class="form-control" placeholder="Cantón">
+                        </div>
+                        <div class="col">
+                            <label>[[#{registrarse.distrito}]]</label>
+                            <input type="text" class="form-control" placeholder="Distrito">
+                        </div>
+                    </div>
+                </form>
+                <form style="padding-bottom: 40px">
+                    <div class="row">
+                        <div class="col">
+                            <label>[[#{registrarse.otras}]]</label>
+                            <input type="text" class="form-control" placeholder="Otras señas">
+                        </div>
+                    </div>
+                </form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Estoy de acuerdo con los <a href="Terms.html" target="_blank" th:href="@{/Terms}"
+                                                    style="font-size: 14px; color: #101010 !important">[[#{registrarse.terminos}]]</a>
+                    </label>
                 </div>
-            </form>
-            <form style="padding-bottom: 40px">
-                <div class="row">
-                    <div class="col">
-                        <label>Correo Electrónico</label>
-                        <input type="text" class="form-control" placeholder="Correo">
-                    </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Estoy de acuerdo con las <a href="Privacy_Policies.html" target="_blank"
+                                                    th:href="@{/Privacy_Policies}" style="font-size: 14px; color: #101010 !important">
+                            [[#{registrarse.politicas}]]</a>
+                    </label>
                 </div>
-            </form>
-            <form style="padding-bottom: 40px">
-                <div class="row">
-                    <div class="form-group col-md-6">
-                        <label for="inputPassword4">Password</label>
-                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-                    </div>
+                <div style="padding-left: 600px; padding-right: 600px">
+                    <button style="background-color: #101010; color: white !important;
+                            " type="submit" class="btn btn-primary mb-2">[[#{registrarse.registrar}]]</button>
                 </div>
-            </form>
-            <form style="padding-bottom: 40px">
-                <div class="row">
-                    <div class="col">
-                        <label>Provincia</label>
-                        <input type="text" class="form-control" placeholder="Provincia">
-                    </div>
-                    <div class="col">
-                        <label>Cantón</label>
-                        <input type="text" class="form-control" placeholder="Cantón">
-                    </div>
-                    <div class="col">
-                        <label>Distrito</label>
-                        <input type="text" class="form-control" placeholder="Distrito">
-                    </div>
-                </div>
-            </form>
-            <form style="padding-bottom: 40px">
-                <div class="row">
-                    <div class="col">
-                        <label>Otras señas</label>
-                        <input type="text" class="form-control" placeholder="Otras señas">
-                    </div>
-                </div>
-            </form>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">
-                    Estoy de acuerdo con los <a href="Terms.html" target="_blank" th:href="@{/Terms}"
-                        style="font-size: 14px; color: #101010 !important">Términos
-                        y condiciones</a>
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">
-                    Estoy de acuerdo con las <a href="Privacy_Policies.html" target="_blank"
-                        th:href="@{/Privacy_Policies}" style="font-size: 14px; color: #101010 !important">
-                        Políticas de privacidad</a>
-                </label>
-            </div>
-            <div style="padding-left: 600px; padding-right: 600px">
-                <button style="background-color: #101010; color: white !important;
-                            " type="submit" class="btn btn-primary mb-2">Registrar</button>
             </div>
         </div>
-    </div>
-
-    <footer th:replace="layout/footer :: footer"></footer>
-</body>
+        <footer th:replace="layout/footer :: footer"></footer>
+    </body>
 
 </html>

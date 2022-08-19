@@ -1,201 +1,209 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 
-<head th:replace="layout/header :: head">
-    <title>Términos y condiciones</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Brandon Ruiz">
-    <meta name="description" content="Este espacio, contendrá los términos
+    <head th:replace="layout/header :: head">
+        <title>Términos y condiciones</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Brandon Ruiz">
+        <meta name="description" content="Este espacio, contendrá los términos
               y condiciones establecidos para la página web">
-</head>
+    </head>
 
-<body id="Main" class="root">
-    <a name="Arriba"></a>
-    <!-- Para montar el header se inicializa con su encapsulador
-        y dentro se hacen las subdiviciones necesarias. Para montarlo
-        es necesario imaginar esa organización de datos y pasarlo a 
-        código. En este caso se hace un div para los enlaces y otro
-        para el ícono de cuenta.-->
-    <header th:replace="layout/header :: header"></header>
+    <body id="Main" class="root">
+        <a name="Arriba"></a>
+        <!-- Para montar el header se inicializa con su encapsulador
+            y dentro se hacen las subdiviciones necesarias. Para montarlo
+            es necesario imaginar esa organización de datos y pasarlo a 
+            código. En este caso se hace un div para los enlaces y otro
+            para el ícono de cuenta.-->
+        <header th:replace="layout/header :: header"></header>
 
-    <div id="page-body" class="body">
-        <div class="Posicion_Articulo">
-            <div class="Contenedor">
-                <div class="Web-Titulo">Términos y condiciones</div>
-                <div class="Barra-Info">
-                    <span class="Contenido">
-                        Restaurante &gt; Términos y condiciones
-                    </span>
-                </div>
-                <div class="Info_Articulo">
-                    <h3><strong>Acá van los términos y condiciones</strong></h3>
+        <div id="page-body" class="body">
+            <div class="Posicion_Articulo">
+                <div class="Contenedor">
+                    <div th:text="#{terminos.titulo}" class="Web-Titulo">
+                        Términos y condiciones</div>
+                    <div class="Barra-Info">
+                        <span class="Contenido">
+                            Restaurante &gt; [[#{terminos.titulo}]]
+                        </span>
+                    </div>
+                    <div class="Info_Articulo">
+                        <h3>
+                            <strong th:text="#{terminos.subtitulo}">
+                                Fecha de entrada en vigor: 19 de agosto de 2022
+                            </strong>
+                        </h3>
 
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip
-                        ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore
-                        eu fugiat nulla pariatur. Excepteur sint occaecat
-                        cupidatat non proident, sunt in culpa qui officia
-                        deserunt mollit anim id est laborum.
-                    </p>
-                    <p>
-                        Curabitur pretium tincidunt lacus. Nulla gravida
-                        orci a odio. Nullam varius, turpis et commodo
-                        pharetra, est eros bibendum elit, nec luctus magna
-                        felis sollicitudin mauris. Integer in mauris eu nibh
-                        euismod gravida. Duis ac tellus et risus vulputate
-                        vehicula. Donec lobortis risus a elit. Etiam tempor.
-                        Ut ullamcorper, ligula eu tempor congue, eros est
-                        euismod turpis, id tincidunt sapien risus a quam.
-                        Maecenas fermentum consequat mi. Donec fermentum.
-                        Pellentesque malesuada nulla a mi. Duis sapien sem,
-                        aliquet nec, commodo eget, consequat quis, neque.
-                        Aliquam faucibus, elit ut dictum aliquet, felis nisl
-                        adipiscing sapien, sed malesuada diam lacus eget
-                        erat. Cras mollis scelerisque nunc. Nullam arcu.
-                        Aliquam consequat. Curabitur augue lorem, dapibus
-                        quis, laoreet et, pretium ac, nisi. Aenean magna
-                        nisl, mollis quis, molestie eu, feugiat in, orci.
-                        In hac habitasse platea dictumst.
-                    </p>
-                    <p>
-                        Fusce convallis, mauris imperdiet gravida bibendum,
-                        nisl turpis suscipit mauris, sed placerat ipsum urna
-                        sed risus. In convallis tellus a mauris. Curabitur
-                        non elit ut libero tristique sodales. Mauris a lacus.
-                        Donec mattis semper leo. In hac habitasse platea
-                        dictumst. Vivamus facilisis diam at odio. Mauris
-                        dictum, nisi eget consequat elementum, lacus ligula
-                        molestie metus, non feugiat orci magna ac sem. Donec
-                        turpis. Donec vitae metus. Morbi tristique neque eu
-                        mauris. Quisque gravida ipsum non sapien. Proin
-                        turpis lacus, scelerisque vitae, elementum at,
-                        lobortis ac, quam. Aliquam dictum eleifend risus. In
-                        hac habitasse platea dictumst. Etiam sit amet diam.
-                        Suspendisse odio. Suspendisse nunc. In semper
-                        bibendum libero.
-                    </p>
-                    <p>
-                        Proin nonummy, lacus eget pulvinar lacinia, pede
-                        felis dignissim leo, vitae tristique magna lacus
-                        sit amet eros. Nullam ornare. Praesent odio ligula,
-                        dapibus sed, tincidunt eget, dictum ac, nibh. Nam
-                        quis lacus. Nunc eleifend molestie velit. Morbi
-                        lobortis quam eu velit. Donec euismod vestibulum
-                        massa. Donec non lectus. Aliquam commodo lacus sit
-                        amet nulla. Cras dignissim elit et augue. Nullam non
-                        diam. Pellentesque habitant morbi tristique senectus
-                        et netus et malesuada fames ac turpis egestas. In
-                        hac habitasse platea dictumst. Aenean vestibulum.
-                        Sed lobortis elit quis lectus. Nunc sed lacus at
-                        augue bibendum dapibus.
-                    </p>
-                    <p>
-                        Aliquam vehicula sem ut pede. Cras purus lectus,
-                        egestas eu, vehicula at, imperdiet sed, nibh. Morbi
-                        consectetuer luctus felis. Donec vitae nisi. Aliquam
-                        tincidunt feugiat elit. Duis sed elit ut turpis
-                        ullamcorper feugiat. Praesent pretium, mauris sed
-                        fermentum hendrerit, nulla lorem iaculis magna,
-                        pulvinar scelerisque urna tellus a justo. Suspendisse
-                        pulvinar massa in metus. Duis quis quam. Proin justo.
-                        Curabitur ac sapien. Nam erat. Praesent ut quam.
-                    </p>
-                    <p>
-                        Vivamus commodo, augue et laoreet euismod, sem sapien
-                        tempor dolor, ac egestas sem ligula quis lacus. Donec
-                        vestibulum tortor ac lacus. Sed posuere vestibulum
-                        nisl. Curabitur eleifend fermentum justo. Nullam
-                        imperdiet. Integer sit amet mauris imperdiet risus
-                        sollicitudin rutrum. Ut vitae turpis. Nulla facilisi.
-                        Quisque tortor velit, scelerisque et, facilisis vel,
-                        tempor sed, urna. Vivamus nulla elit, vestibulum
-                        eget, semper et, scelerisque eget, lacus.
-                        Pellentesque viverra purus. Quisque elit. Donec ut
-                        dolor.
-                    </p>
-                    <p>
-                        Duis volutpat elit et erat. In at nulla at nisl
-                        condimentum aliquet. Quisque elementum pharetra
-                        lacus. Nunc gravida arcu eget nunc. Nulla iaculis
-                        egestas magna. Aliquam erat volutpat. Sed pellentesque
-                        orci. Etiam lacus lorem, iaculis sit amet, pharetra
-                        quis, imperdiet sit amet, lectus. Integer quis elit
-                        ac mi aliquam pretium. Nullam mauris orci, porttitor
-                        eget, sollicitudin non, vulputate id, risus. Donec
-                        varius enim nec sem. Nam aliquam lacinia enim.
-                        Quisque eget lorem eu purus dignissim ultricies.
-                        Fusce porttitor hendrerit ante. Mauris urna diam,
-                        cursus id, mattis eget, tempus sit amet, risus.
-                        Curabitur eu felis. Sed eu mi. Nullam lectus mauris,
-                        luctus a, mattis ac, tempus non, leo. Cras mi nulla,
-                        rhoncus id, laoreet ut, ultricies id, odio.
-                    </p>
-                    <p>
-                        Donec imperdiet. Vestibulum auctor tortor at orci.
-                        Integer semper, nisi eget suscipit eleifend, erat nisl
-                        hendrerit justo, eget vestibulum lorem justo ac leo.
-                        Integer sem velit, pharetra in, fringilla eu,
-                        fermentum id, felis. Vestibulum sed felis. In elit.
-                        Praesent et pede vel ante dapibus condimentum. Donec
-                        magna. Quisque id risus. Mauris vulputate pellentesque
-                        leo. Duis vulputate, ligula at venenatis tincidunt,
-                        orci nunc interdum leo, ac egestas elit sem ut lacus.
-                        Etiam non diam quis arcu egestas commodo. Curabitur
-                        nec massa ac massa gravida condimentum. Aenean id
-                        libero. Pellentesque vitae tellus. Fusce lectus est,
-                        accumsan ac, bibendum sed, porta eget, augue. Etiam
-                        faucibus. Quisque tempus purus eu ante.
-                    </p>
-                    <p>
-                        Vestibulum sapien nisl, ornare auctor, consectetuer
-                        quis, posuere tristique, odio. Fusce ultrices
-                        ullamcorper odio. Ut augue nulla, interdum at,
-                        adipiscing non, tristique eget, neque. Pellentesque
-                        habitant morbi tristique senectus et netus et
-                        malesuada fames ac turpis egestas. Ut pede est,
-                        condimentum id, scelerisque ac, malesuada non, quam.
-                        Proin eu ligula ac sapien suscipit blandit.
-                        Suspendisse euismod. Ut accumsan, neque id gravida
-                        luctus, arcu pede sodales felis, vel blandit massa
-                        arcu eget ligula. Aenean sed turpis. Pellentesque
-                        habitant morbi tristique senectus et netus et
-                        malesuada fames ac turpis egestas. Donec sem eros,
-                        ornare ut, commodo eu, tempor nec, risus. Donec
-                        laoreet dapibus ligula. Praesent orci leo, bibendum
-                        nec, ornare et, nonummy in, elit. Donec interdum
-                        feugiat leo. Vestibulum ante ipsum primis in faucibus
-                        orci luctus et ultrices posuere cubilia Curae;
-                        Pellentesque feugiat ullamcorper ipsum. Donec
-                        convallis tincidunt urna.
-                    </p>
-                    <p>
-                        Suspendisse et orci et arcu porttitor pellentesque.
-                        Sed lacus nunc, fermentum vel, vehicula in, imperdiet
-                        eget, urna. Nam consectetuer euismod nunc. Nulla
-                        dignissim posuere nulla. Integer iaculis lacinia
-                        massa. Nullam sapien augue, condimentum vel,
-                        venenatis id, rhoncus pellentesque, sapien. Donec
-                        sed ipsum ultrices turpis consectetuer imperdiet.
-                        Duis et ipsum ac nisl laoreet commodo. Mauris eu est.
-                        Suspendisse id turpis quis orci euismod consequat.
-                        Donec tellus mi, luctus sit amet, ultrices a,
-                        convallis eu, lorem. Proin faucibus convallis elit.
-                        Maecenas rhoncus arcu at arcu. Proin libero. Proin
-                        adipiscing. In quis lorem vitae elit consectetuer
-                        pretium. Nullam ligula urna, adipiscing nec, iaculis
-                        ut, elementum non, turpis. Fusce pulvinar.
-                    </p>
+                        <p th:text="#{terminos.pa2}">
+                            LEA ATENTAMENTE ESTOS TÉRMINOS DE SERVICIO, INCLUIDA 
+                            NUESTRA POLÍTICA DE PRIVACIDAD. Estos Términos de 
+                            Servicio ("Acuerdo") es un acuerdo legalmente vinculante
+                            entre RESTAURANTE PTE. LTD. ("RESTAURANTE", "nosotros",
+                            "nuestro" o "nos") y usted ("usted" o "Usuario"). Este 
+                            Acuerdo rige su uso o acceso a RESTAURANTE, nuestro sitio
+                            web en línea, cualquier sitio específico de la página, 
+                            sistemas de software, atención al cliente, redes sociales,
+                            canales comunitarios y / o cualquier otro servicio en 
+                            línea proporcionado por RESTAURANTE y cualquiera de nuestros
+                            terceros autorizados (colectivamente los "Servicios de 
+                            RESTAURANTE"), ya sea como invitado o como usuario registrado.
+                            SE SEÑALA A SU ATENCIÓN PARTICULAR LA LIMITACIÓN DE 
+                            RESPONSABILIDAD CONTENIDA EN EL ARTÍCULO 12 A 
+                            CONTINUACIÓN. NOTA PARA PADRES Y TUTORES: NUNCA DEBE 
+                            PERMITIR QUE LOS NIÑOS BAJO SU CUIDADO UTILICEN NINGUNO
+                            DE LOS SERVICIOS SIN SUPERVISIÓN. ASEGÚRESE DE QUE SUS 
+                            HIJOS NO PROPORCIONEN INFORMACIÓN PERSONAL Y QUE ENTIENDAN
+                            CÓMO USAR LOS SERVICIOS DE MANERA SEGURA. 
 
+                        </p>
+                        <p th:text="#{terminos.pa3}">
+                            Tenga en cuenta que RESTAURANTE con el software de 
+                            detección de fraudes en el mismo pueden recopilar y 
+                            transmitir detalles sobre su Cuenta y cualquier programa
+                            y proceso potencialmente no autorizado, sujeto a nuestra
+                            Política de privacidad. En el caso de que se identifique,
+                            usted acepta que RESTAURANTE pueda ejercer parte o la 
+                            totalidad de sus derechos en virtud del presente. Usted
+                            confirma que, al instalar, copiar, ejecutar o utilizar 
+                            de otro modo la página de RESTAURANTE, acepta estar sujeto
+                            a este Acuerdo. Al realizar un registro o una solicitud 
+                            para la Cuenta, utilizar la página de RESTAURANTE, navegar 
+                            por nuestros sitios web, acceder a varios servicios de 
+                            operación o mantenimiento en línea, o acceder de otra 
+                            manera a cualquier servicio proporcionado por RESTAURANTE,
+                            se considera que ha leído, entendido y aceptado todos 
+                            los términos de este Acuerdo.  RESTAURANTE se reserva el
+                            derecho e enmendar, modificar o revisar este Acuerdo en 
+                            cualquier momento y usted acepta verificar periódicamente
+                            los nuevos términos. Tenga en cuenta que su uso 
+                            continuado de los Servicios de COGNOSPHERE esconstituirá 
+                            su aceptación de estar obligado por el Acuerdo recientemente
+                            actualizado. 
+
+                        </p>
+                        <p th:text="#{terminos.pa4}">
+                            SI NO ESTÁ DE ACUERDO CON CUALQUIER TÉRMINO DE ESTE ACUERDO,
+                            NO UTILICE, DIRECTA O INDIRECTAMENTE, NI ACCEDA A LOS 
+                            SERVICIOS DE RESTAURANTE DE NINGUNA MANERA.
+
+                        </p>
+                        <p th:text="#{terminos.pa5}">
+                            1. La Cuenta del restaurante 1) Es posible que se le 
+                            solicite que se registre o tenga una Cuenta del 
+                            restaurante ("Cuenta") para utilizar los Servicios de 
+                            RESTAURANTE. Para crear una Cuenta, se le pedirá que se
+                            registre como Usuario y acepte los Términos de Servicio
+                            de la Cuenta del restaurante. Si no acepta esos términos,
+                            no podrá crear una Cuenta. 2) Puede establecer una 
+                            Cuenta solo si es una persona física y un adulto en su 
+                            país / región de residencia y no es una persona 
+                            específicamente prohibida por nosotros de usar los 
+                            Servicios de RESTAURANTE. Cuando cree con éxito una Cuenta,
+                            como usuario registrado ("Usuario" o "Usuario Registrado"),
+                            debe crear un nombre de usuario. Usted reconoce y acepta
+                            no usar un nombre que sea obsceno u ofensivo. Tenemos 
+                            derecho (pero no estamos obligados) a filtrar ciertas 
+                            palabras y frases que consideramos inaceptables. Además,
+                            si bien cualquier proceso de registro que adoptemos 
+                            puede filtrar cietas palabras y frases inaceptables, 
+                            nunca puede ser un filtro completo. Además, nos reservamos
+                            el derecho de cancelar su uso o Cuenta y tenemos el 
+                            derecho de requerir su nuevo registro con un nuevo Apodo 
+                            aceptable si, a nuestra discreción, consideramos que su 
+                            nombre (o su uso) es ofensivo o infringe los términos del
+                            usuario de alguna manera. 
+
+                        </p>
+                        <p th:text="#{terminos.pa6}">
+                            Usted acepta que en el curso del uso de nuestros servicios, 
+                            deberá:
+
+                        </p>
+                        <p th:text="#{terminos.pa7}">
+                            1) Proporcionar información precisa, actualizada y completa
+                            sobre usted siempre que se le solicite o permita 
+                            cualquier proceso de registro en el sitio ("Datos 
+                            personales")
+
+                        </p>
+                        <p th:text="#{terminos.pa8}">
+                            2) Mantener y actualizar rápidamente sus Datos personales
+                            y mantener sus Datos personales precisos, actualizados 
+                            y completos. 
+
+                        </p>
+                        <p th:text="#{terminos.pa9}">
+                            3) Usted acepta proporcionar información de registro
+                            precisa y completa, y no se le sugiere que cree un 
+                            apodo que refleje su nombre real u otros datos personales. 
+
+                        </p>
+                        <p th:text="#{terminos.pa10}">
+                            4) Usted será responsable de mantener su Cuenta segura
+                            y confidencial (incluyendo, entre otros, la dirección de
+                            correo electrónico, contraseñas u otra información 
+                            relacionada con la cuenta). Además, usted reconoce que 
+                            será responsable de todos y cada uno de los comportamientos
+                            realizados e identificados en o a través de su Cuenta, 
+                            ya sea que usted lo autorice o no. 
+
+                        </p>
+                        <p th:text="#{terminos.pa11}">
+                            Usted no puede ceder, transferir, cobrar o subcontratar
+                            todos o cualquiera de sus derechos u obligaciones en 
+                            virtud de este Acuerdo, ya sea por ministerio de la ley
+                            o de otra manera, sin el consentimiento expreso previo
+                            por escrito de RESTAURANTE. De lo contrario, RESTAURANTE
+                            puede, a su entera discreción, terminar de proporcionarle
+                            cualquier servicio sin previo aviso. Si las restricciones
+                            de transferencia no son exigibles bajo la ley de su país 
+                            / región o residencia, entonces este Acuerdo será vinculante
+                            para usted y cualquiera de sus destinatarios. No obstante
+                            lo anterior, RESTAURANTE tendrá derecho a ceder, 
+                            transferir, cobrar o subcontratar en cualquier momento 
+                            todos o cualquiera de sus derechos u obligaciones en virtud
+                            de este Acuerdo. 
+
+                        </p>
+                        <p th:text="#{terminos.pa12}">
+                            Si alguna disposición de este Acuerdo se considera nula
+                            o declarada ilegal, inválida o inaplicable por cualquier
+                            motivo, dicha disposición será divisible y eliminada de 
+                            este Acuerdo y el resto de este Acuerdo no puede verse 
+                            afectado y permanecer en vigor. No obstante lo anterior,
+                            si la renuncia a la demanda colectiva se considera inválida,
+                            inaplicable o ilegal, usted acepta que puede no ser 
+                            separable. En otras palabras, bajo ninguna circunstancia 
+                            el arbitraje se llevará a cabo de forma colectiva sin el
+                            consentimiento expreso previo por escrito de RESTAURANTE. 
+
+                        </p>
+                        <p th:text="#{terminos.pa13}">
+                            Ley aplicable 
+
+                        </p>
+                        <p th:text="#{terminos.pa14}">
+                            1) Este Acuerdo se regirá e interpretará bajo las 
+                            leyes de Costa Rica, excluyendo sus principios de 
+                            conflicto de leyes. Usted acepta y reconoce que 
+                            cualquier reclamo o acción legal entre ustedes RESTAURANTE.
+                            El laudo arbitral es definitivo y vinculante para 
+                            ambas partes. Si los términos de arbitraje anteriores
+                            no son aplicables en cualquier disputa, ambas partes
+                            acuerdan que dicha disputa se presentará en un tribunal
+                            en Costa Rica. Por la presente, usted acepta y 
+                            renuncia a todas las defensas de falta de jurisdicción
+                            personal y / o no conveniencia del foro con respecto
+                            al lugar y la jurisdicción, ya sea mediante arbitraje
+                            o sentencia judicial. 
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <footer th:replace="layout/footer :: footer"></footer>
-</body>
+        <footer th:replace="layout/footer :: footer"></footer>
+    </body>
 
 </html>

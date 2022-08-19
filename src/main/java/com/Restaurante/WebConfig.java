@@ -32,6 +32,11 @@ public class WebConfig implements WebMvcConfigurer {
     }
 
     @Bean
+    public LocaleResolver localeResolver() {
+        return new SessionLocaleResolver();//new CookieLocaleResolver();
+    }
+
+    @Bean
     public LocaleChangeInterceptor localeChangeInterceptor() {
         var lci = new LocaleChangeInterceptor();
         lci.setParamName("lang");

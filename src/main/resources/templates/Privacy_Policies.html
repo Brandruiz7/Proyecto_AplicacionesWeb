@@ -1,217 +1,195 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 
-<head th:replace="layout/header :: head">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Brandon Ruiz">
-    <meta name="author" content="Camila Luna">
-    <meta name="description" content="Este espacio, contendrá los políticas 
-        y privacidad establecidos para la página web">
-</head>
+    <head th:replace="layout/header :: head">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Brandon Ruiz">
+        <meta name="author" content="Camila Luna">
+        <meta name="description" content="Este espacio, contendrá los políticas 
+              y privacidad establecidos para la página web">
+    </head>
 
-<body id="Main" class="root">
-    <a name="Arriba"></a>
-    <!-- Para montar el header se inicializa con su encapsulador
-        y dentro se hacen las subdiviciones necesarias. Para montarlo
-        es necesario imaginar esa organización de datos y pasarlo a 
-        código. En este caso se hace un div para los enlaces y otro
-        para el ícono de cuenta.-->
-    <header th:replace="layout/header :: header"></header>
+    <body id="Main" class="root">
+        <a name="Arriba"></a>
+        <!-- Para montar el header se inicializa con su encapsulador
+            y dentro se hacen las subdiviciones necesarias. Para montarlo
+            es necesario imaginar esa organización de datos y pasarlo a 
+            código. En este caso se hace un div para los enlaces y otro
+            para el ícono de cuenta.-->
+        <header th:replace="layout/header :: header"></header>
 
-    <div id="page-body" class="body">
+        <div id="page-body" class="body">
 
-        <div class="Posicion_Articulo">
-            <div class="Contenedor">
-                <div class="Web-Titulo">Política de privacidad</div>
-                <div class="Barra-Info">
-                    <span class="Contenido">
-                        Restaurante &gt; Política de Privacidad
-                    </span>
-                </div>
-                <div class="Info_Articulo">
-                    <h3><strong>Aquí van las políticas de privacidad</strong></h3>
+            <div class="Posicion_Articulo">
+                <div class="Contenedor">
+                    <div th:text="#{politicas.titulo}" class="Web-Titulo">
+                        Políticas de Privacidad</div>
+                    <div class="Barra-Info">
+                        <span class="Contenido">
+                            Restaurante &gt; [[#{politicas.titulo}]]
+                        </span>
+                    </div>
+                    <div class="Info_Articulo">
+                        <h3>
+                            <strong th:text="#{politicas.subtitulo}">
+                                Fecha de entrada en vigor: 19 de agosto de 2022
+                            </strong>
+                        </h3>
+                        <p th:text="#{politicas.pa1}">
+                            RESTAURANTE PTE. LTD. ("RESTAURANTE", "nosotros", 
+                            "nuestro" o "nos") reconoce y valora en gran medida 
+                            la privacidad de las personas ("usted" o "Usuario")
+                            que visitan nuestros sitios web, usan o acceden a 
+                            nuestra página, ya sea en dispositivos móviles, PC. 
+                            Nuestros sitios web u otras plataformas aprobadas y 
+                            / o de otra manera usan o acceden a cualquiera de 
+                            nuestros servicios proporcionados, incluidos, entre 
+                            otros. Los sistemas de software,  atención al cliente, 
+                            marketing y publicidad, y servicios comunitarios 
+                            (colectivamente los "Servicios RESTAURANTE" o 
+                            "nuestros servicios"). 
+                        </p>
+                        <p th:text="#{politicas.pa2}">
+                            La edad mínima para crear una Cuenta de RESTAURANTE 
+                            ("Cuenta") es de 18 años. En la medida en que ciertos
+                            países o plataformas apliquen una mayor edad de 
+                            consentimiento para la recopilación de datos personales,
+                            RESTAURANTE requiere el consentimiento de los padres 
+                            o tutores antes de crear una Cuenta y recopilar los 
+                            datos personales asociados con ella. Esta Política 
+                            de privacidad se aplica a todos y cada uno de los 
+                            Servicios de RESTAURANTE y describe por qué y cómo 
+                            recopilamos, almacenamos y utilizamos sus datos 
+                            personales, y las opciones y derechos que tiene sobre
+                            los datos personales que proporciona o recopilamos 
+                            en relación con los Servicios de RESTAURANTE. Al 
+                            acceder a nuestros sitios web o utilizar los Servicios
+                            de RESTAURANTE, usted reconoce que ha leído, 
+                            entendido y aceptado los siguientes términos. 
+                        </p>
+                        <p th:text="#{politicas.pa3}">
+                            En el caso de una fusión, adquisición, reorganización,
+                            bancarrota u otro evento similar, haremos un anuncio
+                            por adelantado, divulgaremos los detalles del evento
+                            y la información sobre el sucesor, y con el 
+                            consentimiento expreso de usted y / o su padre y / o
+                            tutor (si corresponde) nuevamente, sus datos 
+                            personales pueden transferirse al sucesor. 
+                            RESTAURANTE podrá modificar, ajustar o revisar 
+                            periódicamente los términos de esta Política de 
+                            Privacidad. Le anunciaremos los términos actualizados
+                            y obtendremos su consentimiento (y / o el 
+                            consentimiento de su padre / tutor, si corresponde) 
+                            nuevamente. Usted reconoce y acepta verificar los 
+                            términos actualizados regularmente. Si se trata de 
+                            cambios importantes en las cláusulas, haremos un 
+                            anuncio por adelantado. 
 
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip
-                        ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore
-                        eu fugiat nulla pariatur. Excepteur sint occaecat
-                        cupidatat non proident, sunt in culpa qui officia
-                        deserunt mollit anim id est laborum.
-                    </p>
-                    <p>
-                        Fusce convallis, mauris imperdiet gravida bibendum,
-                        nisl turpis suscipit mauris, sed placerat ipsum urna
-                        sed risus. In convallis tellus a mauris. Curabitur
-                        non elit ut libero tristique sodales. Mauris a lacus.
-                        Donec mattis semper leo. In hac habitasse platea
-                        dictumst. Vivamus facilisis diam at odio. Mauris
-                        dictum, nisi eget consequat elementum, lacus ligula
-                        molestie metus, non feugiat orci magna ac sem. Donec
-                        turpis. Donec vitae metus. Morbi tristique neque eu
-                        mauris. Quisque gravida ipsum non sapien. Proin
-                        turpis lacus, scelerisque vitae, elementum at,
-                        lobortis ac, quam. Aliquam dictum eleifend risus. In
-                        hac habitasse platea dictumst. Etiam sit amet diam.
-                        Suspendisse odio. Suspendisse nunc. In semper
-                        bibendum libero.
-                    </p>
-                    <p>
-                        Proin nonummy, lacus eget pulvinar lacinia, pede
-                        felis dignissim leo, vitae tristique magna lacus
-                        sit amet eros. Nullam ornare. Praesent odio ligula,
-                        dapibus sed, tincidunt eget, dictum ac, nibh. Nam
-                        quis lacus. Nunc eleifend molestie velit. Morbi
-                        lobortis quam eu velit. Donec euismod vestibulum
-                        massa. Donec non lectus. Aliquam commodo lacus sit
-                        amet nulla. Cras dignissim elit et augue. Nullam non
-                        diam. Pellentesque habitant morbi tristique senectus
-                        et netus et malesuada fames ac turpis egestas. In
-                        hac habitasse platea dictumst. Aenean vestibulum.
-                        Sed lobortis elit quis lectus. Nunc sed lacus at
-                        augue bibendum dapibus.
-                    </p>
-                    <p>
-                        Aliquam vehicula sem ut pede. Cras purus lectus,
-                        egestas eu, vehicula at, imperdiet sed, nibh. Morbi
-                        consectetuer luctus felis. Donec vitae nisi. Aliquam
-                        tincidunt feugiat elit. Duis sed elit ut turpis
-                        ullamcorper feugiat. Praesent pretium, mauris sed
-                        fermentum hendrerit, nulla lorem iaculis magna,
-                        pulvinar scelerisque urna tellus a justo. Suspendisse
-                        pulvinar massa in metus. Duis quis quam. Proin justo.
-                        Curabitur ac sapien. Nam erat. Praesent ut quam.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip
-                        ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore
-                        eu fugiat nulla pariatur. Excepteur sint occaecat
-                        cupidatat non proident, sunt in culpa qui officia
-                        deserunt mollit anim id est laborum.
-                    </p>
-                    <p>
-                        Fusce convallis, mauris imperdiet gravida bibendum,
-                        nisl turpis suscipit mauris, sed placerat ipsum urna
-                        sed risus. In convallis tellus a mauris. Curabitur
-                        non elit ut libero tristique sodales. Mauris a lacus.
-                        Donec mattis semper leo. In hac habitasse platea
-                        dictumst. Vivamus facilisis diam at odio. Mauris
-                        dictum, nisi eget consequat elementum, lacus ligula
-                        molestie metus, non feugiat orci magna ac sem. Donec
-                        turpis. Donec vitae metus. Morbi tristique neque eu
-                        mauris. Quisque gravida ipsum non sapien. Proin
-                        turpis lacus, scelerisque vitae, elementum at,
-                        lobortis ac, quam. Aliquam dictum eleifend risus. In
-                        hac habitasse platea dictumst. Etiam sit amet diam.
-                        Suspendisse odio. Suspendisse nunc. In semper
-                        bibendum libero.
-                    </p>
-                    <p>
-                        Proin nonummy, lacus eget pulvinar lacinia, pede
-                        felis dignissim leo, vitae tristique magna lacus
-                        sit amet eros. Nullam ornare. Praesent odio ligula,
-                        dapibus sed, tincidunt eget, dictum ac, nibh. Nam
-                        quis lacus. Nunc eleifend molestie velit. Morbi
-                        lobortis quam eu velit. Donec euismod vestibulum
-                        massa. Donec non lectus. Aliquam commodo lacus sit
-                        amet nulla. Cras dignissim elit et augue. Nullam non
-                        diam. Pellentesque habitant morbi tristique senectus
-                        et netus et malesuada fames ac turpis egestas. In
-                        hac habitasse platea dictumst. Aenean vestibulum.
-                        Sed lobortis elit quis lectus. Nunc sed lacus at
-                        augue bibendum dapibus.
-                    </p>
-                    <p>
-                        Aliquam vehicula sem ut pede. Cras purus lectus,
-                        egestas eu, vehicula at, imperdiet sed, nibh. Morbi
-                        consectetuer luctus felis. Donec vitae nisi. Aliquam
-                        tincidunt feugiat elit. Duis sed elit ut turpis
-                        ullamcorper feugiat. Praesent pretium, mauris sed
-                        fermentum hendrerit, nulla lorem iaculis magna,
-                        pulvinar scelerisque urna tellus a justo. Suspendisse
-                        pulvinar massa in metus. Duis quis quam. Proin justo.
-                        Curabitur ac sapien. Nam erat. Praesent ut quam.
-                    </p>
-                    <p>
-                        Aliquam vehicula sem ut pede. Cras purus lectus,
-                        egestas eu, vehicula at, imperdiet sed, nibh. Morbi
-                        consectetuer luctus felis. Donec vitae nisi. Aliquam
-                        tincidunt feugiat elit. Duis sed elit ut turpis
-                        ullamcorper feugiat. Praesent pretium, mauris sed
-                        fermentum hendrerit, nulla lorem iaculis magna,
-                        pulvinar scelerisque urna tellus a justo. Suspendisse
-                        pulvinar massa in metus. Duis quis quam. Proin justo.
-                        Curabitur ac sapien. Nam erat. Praesent ut quam.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip
-                        ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore
-                        eu fugiat nulla pariatur. Excepteur sint occaecat
-                        cupidatat non proident, sunt in culpa qui officia
-                        deserunt mollit anim id est laborum.
-                    </p>
-                    <p>
-                        Fusce convallis, mauris imperdiet gravida bibendum,
-                        nisl turpis suscipit mauris, sed placerat ipsum urna
-                        sed risus. In convallis tellus a mauris. Curabitur
-                        non elit ut libero tristique sodales. Mauris a lacus.
-                        Donec mattis semper leo. In hac habitasse platea
-                        dictumst. Vivamus facilisis diam at odio. Mauris
-                        dictum, nisi eget consequat elementum, lacus ligula
-                        molestie metus, non feugiat orci magna ac sem. Donec
-                        turpis. Donec vitae metus. Morbi tristique neque eu
-                        mauris. Quisque gravida ipsum non sapien. Proin
-                        turpis lacus, scelerisque vitae, elementum at,
-                        lobortis ac, quam. Aliquam dictum eleifend risus. In
-                        hac habitasse platea dictumst. Etiam sit amet diam.
-                        Suspendisse odio. Suspendisse nunc. In semper
-                        bibendum libero.
-                    </p>
-                    <p>
-                        Proin nonummy, lacus eget pulvinar lacinia, pede
-                        felis dignissim leo, vitae tristique magna lacus
-                        sit amet eros. Nullam ornare. Praesent odio ligula,
-                        dapibus sed, tincidunt eget, dictum ac, nibh. Nam
-                        quis lacus. Nunc eleifend molestie velit. Morbi
-                        lobortis quam eu velit. Donec euismod vestibulum
-                        massa. Donec non lectus. Aliquam commodo lacus sit
-                        amet nulla. Cras dignissim elit et augue. Nullam non
-                        diam. Pellentesque habitant morbi tristique senectus
-                        et netus et malesuada fames ac turpis egestas. In
-                        hac habitasse platea dictumst. Aenean vestibulum.
-                        Sed lobortis elit quis lectus. Nunc sed lacus at
-                        augue bibendum dapibus.
-                    </p>
-                    <p>
-                        Aliquam vehicula sem ut pede. Cras purus lectus,
-                        egestas eu, vehicula at, imperdiet sed, nibh. Morbi
-                        consectetuer luctus felis. Donec vitae nisi. Aliquam
-                        tincidunt feugiat elit. Duis sed elit ut turpis
-                        ullamcorper feugiat. Praesent pretium, mauris sed
-                        fermentum hendrerit, nulla lorem iaculis magna,
-                        pulvinar scelerisque urna tellus a justo. Suspendisse
-                        pulvinar massa in metus. Duis quis quam. Proin justo.
-                        Curabitur ac sapien. Nam erat. Praesent ut quam.
-                    </p>
+                        </p>
+                        <p th:text="#{politicas.pa4}">
+                            1. Qué datos recopilamos y procesamos
+                        </p>
+                        <p th:text="#{politicas.pa5}">
+                            Los datos personales significan datos que pueden 
+                            usarse para identificar a un individuo, como la 
+                            dirección de correo electrónico, la dirección de 
+                            contacto, el código postal, los datos de posición, 
+                            el título, la ocupación, los intereses personales 
+                            y otros datos que elija enviar. 
+
+                        </p>
+                        <p th:text="#{politicas.pa6}">
+                            (1) Datos que recopilamos (ya sea directamente o a 
+                            través de un tercero)
+                        </p>
+                        <p th:text="#{politicas.pa7}">
+                            i. Información de registro de la cuenta:
+                        </p>
+                        <p th:text="#{politicas.pa8}">
+                            En el caso de que el servicio de inicio de sesión a
+                            través de la Cuenta de nuestro restaurante ingrese
+                            a nuestros servicios, recopilaremos la información 
+                            de la Cuenta de nuestro restaurante, a saber, nombre
+                            de usuario, dirección de correo electrónico, 
+                            contraseña y código de verificación.
+
+                        </p>
+                        <p th:text="#{politicas.pa9}">
+                            Utilizamos esta información para crear la cuenta 
+                            para su uso de nuestros servicios según lo solicitado,
+                            para proporcionar servicios de inicio de sesión, 
+                            para almacenar sus datos y el pedidos, para analizar
+                            y administrar nuestros servicios para la administración
+                            del sistema y para proporcionar excelentes servicios
+                            de acuerdo con el Artículo 2 (2) y 2 (8) en "Por qué
+                            recopilamos y procesamos sus datos personales" 
+                            ("Artículo 2") de esta Política de privacidad sobre
+                            la base legal de la ejecución de nuestro contrato 
+                            con usted para proporcionar nuestros servicios 
+                            ("Prestación de servicios").
+
+                        </p>
+                        <p th:text="#{politicas.pa10}">
+                            ii. Fecha de nacimiento.
+                        </p>
+                        <p th:text="#{politicas.pa11}">
+                            Solo recibimos esto información si la proporciona 
+                            voluntariamente al utilizar nuestros servicios de
+                            conformidad con el Artículo 2 (4) sobre la base 
+                            legal de que se recopila con su consentimiento 
+                            ("con consentimiento"),, y utilizamos esta información
+                            para verificar su edad si es un usuario en ciertas 
+                            regiones. Dado que no podemos verificar la autenticidad
+                            de su edad, su edad autoinformada se considerará 
+                            como la base para el juicio. 
+
+                        </p>
+                        <p th:text="#{politicas.pa12}">
+                            iii. Número de teléfono o dirección de correo electrónico.
+                        </p>
+                        <p th:text="#{politicas.pa13}">
+                            Solo recibimos dicha información si nos la proporciona
+                            voluntariamente para vincular su Cuenta con su 
+                            número de teléfono y / o dirección de correo 
+                            electrónico, iniciar sesión en nuestros servicios,
+                            recibir notificaciones de reclutamiento / prueba, 
+                            boletines, encuestas y actualizaciones de nuestros
+                            servicios y recibir códigos de verificación por 
+                            correo electrónico o SMS para cambiar la contraseña
+                            u otros fines de acuerdo con el Artículo 2 (1) y 2 
+                            (7) con consentimiento. 
+
+                        </p>
+                        <p th:text="#{politicas.pa14}">
+                            En relación con su uso de nuestros servicios, nos 
+                            hemos esforzado por tomar medidas razonables para 
+                            evitar el acceso no autorizado o el uso indebido de
+                            sus datos personales, como controles organizativos, 
+                            protección técnica y otras medidas de protección. 
+                            Desafortunadamente, la transmisión de información a
+                            través de Internet no es completamente segura. Si 
+                            bien nos esforzamos por proteger sus datos personales,
+                            también le recordamos que esté al tanto de la 
+                            piratería, los ataques cibernéticos y otros riesgos
+                            en Internet. Por lo tanto, le recomendamos 
+                            encarecidamente que tome todas las precauciones 
+                            posibles para proteger sus datos personales al 
+                            utilizar nuestros servicios, incluidos, entre otros,
+                            cambiar sus contraseñas de vez en cuando, no 
+                            reflejar su nombre real u otros datos personales en
+                            el registro, usar una combinación de letras y 
+                            números al crear contraseñas, usar un navegador 
+                            seguro y / o tomar otras posibles medidas de seguridad. 
+
+                        </p>
+                    </div>
                 </div>
             </div>
+
         </div>
 
-    </div>
-
-    <footer th:replace="layout/footer :: footer"></footer>
-</body>
+        <footer th:replace="layout/footer :: footer"></footer>
+    </body>
 
 </html>
