@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+    <head th:replace="layout/header :: head">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Brandon Ruiz">
+        <meta name="description" content="Este espacio, para las ofertas de empleo">
+    </head>
+
+    <body id="Main" class="root">
+        <a name="Arriba"></a>
+        <!-- Para montar el header se inicializa con su encapsulador
+            y dentro se hacen las subdiviciones necesarias. Para montarlo
+            es necesario imaginar esa organización de datos y pasarlo a 
+            código. En este caso se hace un div para los enlaces y otro
+            para el ícono de cuenta.-->
+        <header th:replace="layout/header :: header"></header>
+
+        <div id="page-body" class="body">
+            <div class="Posicion_Articulo">
+                <div class="Contenedor">
+                    <div th:text="#{empleos.titulo}" class="Web-Titulo">Trabaje con nosotros</div>
+                    <div class="Barra-Info">
+                        <span class="Contenido">
+                            Restaurante &gt; [[#{empleos.titulo}]]
+                        </span>
+                    </div>
+                    <div class="Info_Articulo">
+                        <h3>
+                            <strong th:text="#{empleos.subtitulo}">
+                                ¿Quieres unirte a nuestro equipo?
+                            </strong>
+                        </h3>
+                        <p th:text="#{empleos.pa1}">
+                            Nuestro principal objetivo es brindarle a nuestros 
+                            clientes la mejor experiencia gastronómica y el mejor
+                            servicio.
+                        </p>
+                        <p th:text="#{empleos.pa2}">
+                            Trabajá en un ambiente agradable y con alta excelencia
+                            donde tenés oportunidad de desarrollar tu máximo 
+                            potencial y habilidades
+                        </p>
+                        <p th:text="#{empleos.pa3}">
+                            Si queres formar parte de nuestro equipo, completá 
+                            el siguiente formulario
+                        </p>
+                        <img src="/img/pexels-elle-hughes-2696064.jpg" alt="Chefs"
+                             width="100%">
+                        <div class="Boton-Ubi">
+                            <button data-toggle="modal" type="button"
+                                    class="Boton-Reservar">
+                                <a th:text="#{empleos.formulario}"
+                                   href="https://docs.google.com/forms/d/e/1FAIpQLSf2-onMxF7ojept4ga8qqEoo-DsMo1tjFMDvUET70yrswi-0w/viewform?usp=pp_url" target="_blank">
+                                    Formulario
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer th:replace="layout/footer :: footer"></footer>
+    </body>
+
+</html>

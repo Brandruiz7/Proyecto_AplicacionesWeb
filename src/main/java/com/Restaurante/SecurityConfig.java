@@ -38,10 +38,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("About_Us","Activities","Contact_Us",
                         "Index","Menu","Orders","Privacy_Policies",
                         "Terms","/cliente/Shopping_Cart"
-                        ,"/cuenta/Configuration_Account")
+                        ,"/cuenta/Configuration_Account", "Employment")
                 .hasAnyRole("ADMIN", "CLIENTE")
-                .antMatchers("/cuenta/listado")
-                .hasRole("ADMIN") //Roles asignados
                 .antMatchers("/")
                 .hasAnyRole("ADMIN","CLIENTE")
                 .and()

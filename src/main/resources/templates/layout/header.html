@@ -19,19 +19,29 @@
                 <div class="div-NL-general">
                     <div class="div-nav-links">
                         <nav class="navbar-links">
-                            <a href="Index.html" th:href="@{/Index}">[[#{header.inicio}]]</a>
+                            <a href="Index.html" 
+                               th:text="#{header.inicio}"
+                               th:href="@{/Index}">Inicio</a>
                         </nav>
                         <nav class="navbar-links">
-                            <a href="Menu.html" th:href="@{/Menu}">[[#{header.menu}]]</a>
+                            <a href="Menu.html" 
+                               th:text="#{header.menu}"
+                               th:href="@{/Menu}">Menú</a>
                         </nav>
                         <nav class="navbar-links">
-                            <a href="Activities.html" th:href="@{/Activities}">[[#{header.actividades}]]</a>
+                            <a href="Activities.html" 
+                               th:text="#{header.actividades}" 
+                               th:href="@{/Activities}">Actividades</a>
                         </nav>
                         <nav class="navbar-links">
-                            <a href="Configuration_Account.html" th:href="@{/cuenta/Configuration_Account}">[[#{header.cuenta}]]</a>
+                            <a href="Employment.html" 
+                               th:text="#{header.empleo}"
+                               th:href="@{/Employment}">Trabaje con nosotros</a>
                         </nav>
                         <nav class="navbar-links">
-                            <a href="Orders.html" th:href="@{/Orders}">[[#{header.solicitarOrden}]]</a>
+                            <a href="Orders.html" 
+                               th:text="#{header.solicitarOrden}"
+                               th:href="@{/Orders}">Solicitar Orden</a>
                         </nav>
                         <nav class="navbar-icon">
                             <a href="Shopping_Cart.html" th:href="@{/cliente/Shopping_Cart}">
