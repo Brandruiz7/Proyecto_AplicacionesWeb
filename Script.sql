@@ -51,7 +51,9 @@ ENGINE = innoDB;
 
 INSERT INTO `usuario` (username,apellido_P,apellido_M,id_rol,correo,password,provincia,canton,distrito,otras_Senias)
 VALUES('Brandon','Ruiz','Miranda','1','brandruiz7@gmail.com','123','Cartago','La Unión','Dulce Nombre','Casa Verde');
+INSERT INTO `usuario` (username,apellido_P,apellido_M,id_rol,correo,password,provincia,canton,distrito,otras_Senias)
 VALUES('Laura','Segreda','Elizondo','1','laura.segreda@gmail.com','123','San José','Alajuelita','Concepción','Urb Vista Real');
+INSERT INTO `usuario` (username,apellido_P,apellido_M,id_rol,correo,password,provincia,canton,distrito,otras_Senias)
 VALUES('Maria','Perez','Lopez','2','mlopez@gmail.com','123','San José','Aserrí','Poás','Centro');
 
 
