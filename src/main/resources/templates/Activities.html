@@ -24,64 +24,47 @@
                 <br />
                 <br />
                 <articule>
-                    <header class="Subtitulo_Articulo">Concierto de Jazz al aire libre</header>
+                    <header class="Subtitulo_Articulo" th:text="#{actividad.titulo}">Concierto de Jazz al aire libre</header>
                     <figure class="Fig-Articulo">
                         <img src="/img/ConciertoJazz.jpg" alt="Concierto Jazz" width="100%" />
-                        <figcaption style="text-align: center;">
+                        <figcaption style="text-align: center;" th:text="#{actividad.pa1}">
                             El grupo internacional se ha presentado en más de 20 países
                         </figcaption>
                         <br />
-                        <article class="Desc-Articulo">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing
-                                elit, sed do eiusmod tempor incididunt ut labore et
-                                dolore magna aliqua. Ut enim ad minim veniam, quis
-                                nostrud exercitation ullamco laboris nisi ut aliquip
-                                ex ea commodo consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum dolore
-                                eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat non proident, sunt in culpa qui officia
-                                deserunt mollit anim id est laborum.
+                        <article class="Desc-Articulo" >
+                            <p th:text="#{actividad.pa2}">
+                                El jazz es un género musical que tiene origen por melodías afroamericanas y
+                                mezclas de otros ritmos, y todo comenzó a finales del siglo XIX en los Estados Unidos.
+                                El término Jazz se hizo público en un artículo publicado en el "Boletín de San Francisco",
+                                en 1913.
                             </p>
-                            <p>
-                                Fusce convallis, mauris imperdiet gravida bibendum,
-                                nisl turpis suscipit mauris, sed placerat ipsum urna
-                                sed risus. In convallis tellus a mauris. Curabitur
-                                non elit ut libero tristique sodales. Mauris a lacus.
-                                Donec mattis semper leo. In hac habitasse platea
-                                dictumst. Vivamus facilisis diam at odio. Mauris
-                                dictum, nisi eget consequat elementum, lacus ligula
-                                molestie metus, non feugiat orci magna ac sem. Donec
-                                turpis. Donec vitae metus. Morbi tristique neque eu
-                                mauris. Quisque gravida ipsum non sapien. Proin
-                                turpis lacus, scelerisque vitae, elementum at,
-                                lobortis ac, quam. Aliquam dictum eleifend risus. In
-                                hac habitasse platea dictumst. Etiam sit amet diam.
-                                Suspendisse odio. Suspendisse nunc. In semper
-                                bibendum libero.
+                            <p th:text="#{actividad.pa3}">
+                                El jazz es un género o estilo musical que surge de la mezcla de diferentes melodías y ritmos
+                                afro-norteamericanos, considerado como uno de los más famosos y populares estilos de música del mundo.
+                                Este estilo se caracteriza por no basarse en ninguna partitura de forma estructurada.
                             </p>
                         </article>
                         <div class="Boton-Ubi">
                             <button data-toggle="modal" data-target="#exampleModalCenter" type="button"
-                                class="Boton-Reservar">Reservar</button>
+                                class="Boton-Reservar" th:text="#{actividad.pa4}">Reservar</button>
                             <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLongTitle">Información de evento
+                                            <h5 class="modal-title" id="exampleModalLongTitle" th:text="#{actividad.pa5}">Información de evento
                                             </h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
-                                        <div class="modal-body">
+                                        <div class="modal-body" th:text="#{actividad.pa6}">
                                             Se ha enviado la información sobre este evento al correo electrónico
                                             registrado
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary"
-                                                data-dismiss="modal">Cerrar</button>
+                                                data-dismiss="modal" th:text="#{actividad.pa7}">Cerrar</button>
                                         </div>
                                     </div>
                                 </div>
@@ -92,65 +75,48 @@
                 <br />
                 <br />
                 <articule>
-                    <header class="Subtitulo_Articulo">Noche Mexicana</header>
+                    <header class="Subtitulo_Articulo" th:text="#{actividad.pa8}">Noche Mexicana</header>
                     <figure class="Fig-Articulo">
                         <br />
                         <img src="/img/Noche_Mexicana.jpg" alt="Noche-Mexicana" width="100%" />
-                        <figcaption style="text-align: center;">
+                        <figcaption style="text-align: center;" th:text="#{actividad.pa9}">
                             Tendremos Chefs especializados
                         </figcaption>
                         <br />
                         <article class="Desc-Articulo">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing
-                                elit, sed do eiusmod tempor incididunt ut labore et
-                                dolore magna aliqua. Ut enim ad minim veniam, quis
-                                nostrud exercitation ullamco laboris nisi ut aliquip
-                                ex ea commodo consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum dolore
-                                eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat non proident, sunt in culpa qui officia
-                                deserunt mollit anim id est laborum.
+                            <p th:text="#{actividad.pa10}">
+                                Esta fecha conmemora el esfuerzo del pueblo mexicano contra la conquista española.
+                                Como verás el objetivo de las familias mexicanas es reunirse, compartir, comer, bailar 
+                                y pasar una noche muy agradable conviviendo con los suyos. Con estos tips seguro podrás hacer una 
+                                fiesta mexicana donde quiera que estés.
                             </p>
-                            <p>
-                                Fusce convallis, mauris imperdiet gravida bibendum,
-                                nisl turpis suscipit mauris, sed placerat ipsum urna
-                                sed risus. In convallis tellus a mauris. Curabitur
-                                non elit ut libero tristique sodales. Mauris a lacus.
-                                Donec mattis semper leo. In hac habitasse platea
-                                dictumst. Vivamus facilisis diam at odio. Mauris
-                                dictum, nisi eget consequat elementum, lacus ligula
-                                molestie metus, non feugiat orci magna ac sem. Donec
-                                turpis. Donec vitae metus. Morbi tristique neque eu
-                                mauris. Quisque gravida ipsum non sapien. Proin
-                                turpis lacus, scelerisque vitae, elementum at,
-                                lobortis ac, quam. Aliquam dictum eleifend risus. In
-                                hac habitasse platea dictumst. Etiam sit amet diam.
-                                Suspendisse odio. Suspendisse nunc. In semper
-                                bibendum libero.
+                            <p th:text="#{actividad.pa11}">
+                                Una forma de celebrar y preservar nuestra mexicanidad en un ambiente festivo para conmemorar los sucesos
+                                de la Independencia del 16 de septiembre de 1810. En su organización pueden participar los alumnos en un espacio de fiesta,
+                                de bailes, de juegos y antojitos mexicanos.
                             </p>
                         </article>
                         <div class="Boton-Ubi">
                             <button data-toggle="modal" data-target="#exampleModalCenter" type="button"
-                                class="Boton-Reservar">Reservar</button>
+                                class="Boton-Reservar" th:text="#{actividad.pa4}">Reservar</button>
                             <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLongTitle">Información de evento
+                                            <h5 class="modal-title" id="exampleModalLongTitle" th:text="#{actividad.pa5}">Información de evento
                                             </h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
-                                        <div class="modal-body">
+                                        <div class="modal-body" th:text="#{actividad.pa6}">
                                             Se ha enviado la información sobre este evento al correo electrónico
                                             registrado
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary"
-                                                data-dismiss="modal">Cerrar</button>
+                                                data-dismiss="modal" th:text="#{actividad.pa7}">Cerrar</button>
                                         </div>
                                     </div>
                                 </div>

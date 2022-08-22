@@ -1,11 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 
 <head th:replace="layout/header :: head">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Marcela Mejia">
+    <meta name="description" content="Este espacio, contendrá la información 
+              de contacto del cliente con la empresa">
 </head>
 
-<body>
-    <div>CARRITO</div>
+<body id="Main" class="root">
+    <a name="Arriba"></a>
+
+    <div id="page-body" class="body">
+        <div class="Posicion_Articulo">
+            <div class="Contenedor">
+                <div class="Web-Titulo" th:text="#{carrito.titulo}">Carrito</div>
+                <div class="Info_Contactenos">
+
+                    <p th:text="#{carrito.pa1}">
+                        Contenido del carrito
+                    </p>
+
+                    <img src="/img/file.jpg" alt="File" />
+
+                    <button type="submit" class="btn btn-primary" style="border-radius: 50px;
+                                color: black;
+                                font-weight: 700;
+                                background-color: white;
+                                border-color: black;" th:text="#{carrito.pa2}">Hacer pedido <i class="fas fa-shopping-cart"></i></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer th:replace="layout/footer :: footer"></footer>
 </body>
 
 </html>
