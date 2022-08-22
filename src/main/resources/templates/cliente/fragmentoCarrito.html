@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <seccion th:fragment="listado" id="categorias">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>[[#{carrito.titulo}]]</h4>
+                        </div>
+                        <div th:if="${carrito != null and !carrito.empty}">
+                            <table class="table table-stryped">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>#</th>
+                                        <th th:text="#{carrito.descripcion}">Descripcion</th>
+                                        <th th:text="#{carrito.activo}">Activo</th>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr th:each="carrito, contador : ${carrito}">
+                                        <td>[[${contador.count}]]</td>
+                                        <td>[[${carrito.descripcion}]] + ' ' + [[${carrito.activo}]]</td>
+                                        <td>
+                                            <a sec:authorize="hasRole('ROLE_ADMIN')" th:href="@{/categoria/eliminar/}+$(categoria.idCategorias}"
+                                               class="btn btn-danger">
+                                                <i class="fas fa-angle-double-right"></i> [[#{accion.eliminar}]]
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a sec:authorize="hasRole('ROLE_ADMIN')" th:href="@{/categoria/modificar/}+$(categoria.idCategorias}"
+                                               class="btn btn-success">
+                                                <i class="fas fa-angle-double-right"></i> [[#{accion.actualizar}]]
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="text-center p-2" th:if="${carritos == null or carritos.empty}">
+                            <span th:text="#{carritos.no_mostrar)">Lista vacia</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center bg-success text-white mb-3">
+                        <div class="card-body">
+                            <h3 th:text="#{carrito.resumen]">Total productos</h3>
+                            <h4 class="fs-2">
+                                <i class="fas fa-users"></i> [[${totalCategorias}]]
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </seccion>
+    
+    </body>
+</html>
