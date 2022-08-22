@@ -97,7 +97,7 @@ public class IndexController {
      *
      * @return Retorna el ordenes del sitio.
      */
-    @RequestMapping(path = "/Orders", method = RequestMethod.GET)
+    //@RequestMapping(path = "/Orders", method = RequestMethod.GET)
     public String loadOrders() {
         System.out.println("Cargando página...");
 

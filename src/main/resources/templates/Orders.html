@@ -1,28 +1,48 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 
-<head th:replace="layout/header :: head">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Brandon Ruiz">
-    <meta name="description" content="Este espacio, contendrá los términos
-              y condiciones establecidos para la página web">
-</head>
+    <head th:replace="layout/header :: head">
+        <title>Nuestro menú</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Brandon Ruiz">
+        <meta name="description" content="Este espacio contendrá ">
+    </head>
 
-<body id="Main" class="root">
-    <a name="Arriba"></a>
-    <!-- Para montar el header se inicializa con su encapsulador
-        y dentro se hacen las subdiviciones necesarias. Para montarlo
-        es necesario imaginar esa organización de datos y pasarlo a 
-        código. En este caso se hace un div para los enlaces y otro
-        para el ícono de cuenta.-->
-    <header th:replace="layout/header :: header"></header>
+    <body id="Main" class="root">
+        <a name="Arriba"></a>
+        <!-- Para montar el header se inicializa con su encapsulador
+            y dentro se hacen las subdiviciones necesarias. Para montarlo
+            es necesario imaginar esa organización de datos y pasarlo a 
+            código. En este caso se hace un div para los enlaces y otro
+            para el ícono de cuenta.-->
+        <header th:replace="layout/header :: header"></header>
 
-    <div id="page-body" class="body">
-
-    </div>
-
-    <footer th:replace="layout/footer :: footer"></footer>
-</body>
-
+        <div id="page-body" class="body">
+            <div class="Posicion_Articulo">
+                <div class="Info_Articulo">
+                    <br />
+                    <br />
+                    <div class="container">
+                        <h2 th:text="#{platillo.titulo}"></h2> 
+                        <br />
+                        <div class="row row-cols-3" th:if="${platillos != null and !platillos.empty}">
+                            <div class="card" th:each="platillo : ${platillos}" >
+                                <!--<img src="/images/equipo1.jpg" class="card-img-top" alt="equipo"> -->
+                                <div class="card-body">
+                                    <h5 class="card-title">[[${platillo.descripcion}]]</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted text-end">[[${new java.text.DecimalFormat('¢#,##0.00').format(platillo.precio)}]]</h6>
+                                    <a class="card-link" th:href="@{/carrito/agregar/} + ${platillo.idPlatillo}">[[#{platillo.comprar}]]</a>                        
+                                </div>
+                            </div>                
+                        </div>
+                        <div th:if="${platillos == null or platillos.empty}"  th:text="#{platillo.no_mostrar}">
+                            No se pueden realizar pedidos en este momento
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer th:replace="layout/footer :: footer"></footer>
+    </body>
 </html>
