@@ -56,13 +56,6 @@ VALUES('Laura','Segreda','Elizondo','1','laura.segreda@gmail.com','123','San Jos
 INSERT INTO `usuario` (username,apellido_P,apellido_M,id_rol,correo,password,provincia,canton,distrito,otras_Senias)
 VALUES('Maria','Perez','Lopez','2','mlopez@gmail.com','123','San José','Aserrí','Poás','Centro');
 
-
-/*Se llama al mismo método para agregar nuevos clientes o admins*/
-
-CREATE TABLE `restaurante`.`carrito` (`id_carrito` INT NOT NULL AUTO_INCREMENT, `id_cliente` INT NOT NULL, PRIMARY KEY (`id_carrito`),
-foreign key fk_carrito_cliente (id_cliente) references cliente(id_cliente) )
-ENGINE = innoDB;
-
 CREATE TABLE `restaurante`.`menu` 
 (
   id_platillo INT NOT NULL AUTO_INCREMENT,
@@ -125,3 +118,14 @@ VALUES
 ('Hamburguesa con papas', 'Infantil', '4500'),
 ('Pizza personal', 'Infantil', '5500');
 
+/*Se llama al mismo método para agregar nuevos clientes o admins*/
+
+CREATE TABLE `restaurante`.`carrito` (`id_carrito` INT AUTO_INCREMENT, `id_usuario` INT NOT NULL, PRIMARY KEY (`id_carrito`),
+foreign key fk_carrito_cliente (id_usuario) references `usuario`(id_usuario))
+ENGINE = innoDB;
+
+CREATE TABLE `restaurante`.`carrito_detalle` (`id_detalle` INT NOT NULL AUTO_INCREMENT, `id_carrito` INT NOT NULL, `id_platillo` INT NOT NULL, 
+`precio` DOUBLE NOT NULL, `cantidad` INT NOT NULL, PRIMARY KEY (`id_detalle`),
+foreign key fk_detalle_carrito (id_carrito) references carrito(id_carrito),
+foreign key fk_detalle_articulo (id_platillo) references `restaurante`.`menu` (id_platillo))
+ENGINE = innoDB;
